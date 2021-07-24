@@ -1,0 +1,226 @@
+/*
+    This file is for Login Page Styling
+*/
+body#login_form{
+    .form-col{
+        height: 100vh;
+        background: #f2f2f2;
+        overflow: hidden;
+        @include sm{
+            position: relative;
+            z-index: 9;
+        }
+    }
+    form{
+        padding: 50px 70px;
+        margin-top: 5%;
+        @include md{
+            padding: 20px;
+            margin-top: 0;
+        }
+    } 
+    .who-logo{
+        height: 70px;
+        @include sm{
+            margin: auto;
+        }
+    }
+    h1{
+        font-size: 7vh;
+        font-weight: 700;
+        letter-spacing: 2px;
+        @include md{
+            font-size: 4vh;
+        }
+        }
+    label{
+            text-transform: uppercase;
+            font-size: 20px;
+            font-weight: 500;
+            color: #3e3d3d;
+        }
+    .form-control{
+            background: none;
+            border: 0px;
+            border-bottom: 3px solid;
+            border-radius: 0px;
+            padding-left: 0px;
+                &:focus{
+                outline: none;
+                box-shadow: none;
+                }
+            }
+    .btn-custom{
+        background: rgb(23,92,115);
+        background: linear-gradient(259deg, rgba(23,92,115,1) 0%, rgba(18,117,149,1) 100%);
+        font-size: 18px;
+        font-weight: 500;
+        text-transform: uppercase;
+        padding: 10px 40px;
+        position: relative;
+        color: #fff;
+        span{
+            z-index: 1;
+            position: relative;
+            color: #f3f3f2;
+            transition: all 0.3s;
+        }
+        &:after{
+            content: '';
+            height: 104%;
+            width: 101%;
+            background: rgb(0,0,0);
+            background: linear-gradient(259deg, rgba(0,0,0,0.7259278711484594) 0%, rgba(0,0,0,0.6138830532212884) 100%);
+            position: absolute;
+            left: -1px;
+            top: -50px;
+            border-radius: 3px;
+            transition: all 0.2s;
+        }
+        &:hover{
+            &:after{
+                top: -1px;
+            }
+            span{
+                color: #fff;
+            }
+        }
+            
+    }
+    .bg-col{
+        padding: 30px 70px;
+        margin-top: 5%;
+        h2{
+            color: #596d7d;
+            @include sm{
+                display: none;
+            }
+        }
+    }
+}
+#form1{
+    background: #fff;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    box-shadow: 0px 4px 5px 1px #e4e2e2;
+    form{
+        padding: 20px;
+        label{
+            margin-bottom: 0px;
+            font-weight: 300;
+            letter-spacing: 1px;
+        }
+        .form-control{
+            border-radius: 2px; 
+            border: none;
+            border-bottom: 1px solid lightgray;
+            padding-left: 0px;
+            &:focus{
+                box-shadow: none;
+            }
+        }
+        ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: lightgray;
+        opacity: 1; /* Firefox */
+        font-weight: 300;
+        }
+
+        :-ms-input-placeholder { /* Internet Explorer 10-11 */
+         color: lightgray;
+              font-weight: 300;
+        }
+
+        ::-ms-input-placeholder { /* Microsoft Edge */
+      color: lightgray;
+              font-weight: 300;
+        }
+        #toolbar{
+            background: #f1f1f1;
+            padding: 5px 15px;
+            border-radius: 5px;
+            a{
+                border: 1px solid #b3b3b3;
+                height: 25px;
+                width: 30px;
+                display: inline-block;
+                text-align: center;
+            }
+        }
+    }
+    .wysihtml-sandbox{
+        border: 1px solid lightgray !important;
+        margin-top: 10px !important;
+    }
+
+}
+ul.list-unstyled2{
+    a{
+        font-size: 12px !important;
+        &:hover{
+            color: #3e3d3d !important;
+        }
+    }
+}
+.filter{
+    background: #176078;
+    color: #fff;
+    padding: 10px;
+    label{
+        margin-bottom: 0px;
+        position: relative;
+        top: 6px;
+    }
+}
+::-webkit-scrollbar {
+  width: 7px;
+}
+::-webkit-scrollbar-thumb {
+  background: #175c738f;
+}
+
+.row-table{
+    background: #fff;
+    overflow: auto;
+    width: 100%;
+    height: calc(100vh - 210px);
+    border-radius: 4px;
+    box-shadow: 0px 0px 10px 0px grey;
+    padding: 3px;
+    margin-bottom: 10px;
+    table{
+        thead{
+            background: #385965;
+            color: white;
+            font-size: 15px;
+        }
+        td,th{
+            padding: 2px;
+            text-align: center;
+            vertical-align: middle;
+        }
+        th{
+            font-size: 13px;
+            font-weight: 400;
+        }
+        td{
+            font-size: 12px;
+            font-weight: 100;
+            color: #131212;
+        }
+    }
+    img{
+        width: 30px;
+    }
+}
+.show-sm{
+    display: none;
+     color: #596d7d;
+    @include sm{
+        display: block;
+    }
+}
+.display-opacity-sm{
+    @include sm{
+       display: none;
+    }
+}

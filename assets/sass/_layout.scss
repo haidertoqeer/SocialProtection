@@ -1,0 +1,668 @@
+/*
+    Layout Styling 
+*/
+.ul-logout{
+        list-style-type: none;
+        margin: 0px;
+        padding: 0px;
+        position: absolute;
+        bottom: 0px;
+        left: 63px;
+        font-weight: 100;
+        transition: all 0.3s;
+    a{
+        &:hover{
+            background: transparent !important;
+        }
+    }
+}
+
+body#main-page{
+    font-family: 'Poppins', sans-serif;
+    background: #fafafa;
+        .navbar {
+        padding: 0 10px;
+        background: #fff;
+        border: none;
+        border-radius: 0;
+        margin-bottom: 2px;
+        box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.33);
+    }
+    
+    .navbar-btn {
+        box-shadow: none;
+        outline: none !important;
+        border: none;
+    }
+    .line {
+        width: 100%;
+        height: 1px;
+        border-bottom: 1px dashed #ddd;
+        margin: 40px 0;
+    }
+        i,
+        span {
+            display: inline-block;
+        }
+        .wrapper {
+            display: flex;
+            align-items: stretch;
+        }
+        #sidebar {
+            min-width: 250px;
+            max-width: 250px;
+            background: #ececec;
+            color: #fff;
+            transition: all 0.3s;
+            box-shadow: 1px 0px 5px 0px grey;
+            position: fixed;
+            height: 100vh;
+            @include md{
+                margin-left: 0px !important;
+            }
+            .responsive-side{
+                background: gray;
+                display: none;
+                height: 0px;
+                transition: all 0.3s;
+                }
+            .li-tree{
+                &.intro{
+                    .responsive-side{
+                        display: block;
+                        position: relative;
+                        height: auto;
+                        list-style-type: none;
+                        padding: 16px;
+                        font-size: 12px;
+                        font-weight: 100;
+                        letter-spacing: 1px;
+                    }
+                }
+            }
+            &.active {
+                min-width: 80px !important;
+                max-width: 80px !important;
+                text-align: center;
+                position: relative;
+                .sidebar-header h3{
+                    display: none;
+                }
+                .CTAs{
+                    display: none;
+                }
+                .sidebar-header strong{
+                    display: block;
+                }
+                .ul-logout{
+                   left: 20px !Important;
+                        }
+                     .li-tree{
+                    .responsive-side{
+                        background: gray;
+                         display: none;
+                        height: 0px;
+                        transition: all 0.3s;
+                    }
+                    &.intro{
+                        .responsive-side{
+                            display: block;
+                            height: 100px;
+                            position: absolute;
+                            left: 80px;
+                            top: 0px;
+                            z-index: 999;
+                            list-style-type: none;
+                            padding: 13px;
+                            margin: 0px;
+                            border-radius: 3px;
+                            font-size: 12px;
+                            letter-spacing: 1px;
+                        }
+                    }
+                }   
+            }
+            h3{
+                font-size: 20px;
+                font-weight: 400;
+            }
+            img{
+            max-height: 60px;
+            }
+        }
+    a{
+          color: #2f2f2f;
+    }
+    }
+
+#sidebar ul li a {
+    text-align: left;
+}
+
+#sidebar.active ul li a {
+    padding: 20px 10px;
+    text-align: center;
+    font-size: 0.85em;
+}
+#sidebar{
+    .homeSubmenu{
+        list-style-type: none;
+        padding: 0px;
+        margin: 0px;
+        div{
+            position: relative;
+        }
+        li{
+            background: #166078;
+            color: #fff;
+            font-size: 14px;
+            font-weight: 200;
+            padding: 7px 40px;
+            border-bottom: 1px solid #ffffff5c;
+        }
+    }
+    &.active{
+      
+            .collapse-div{
+                position: absolute;
+                z-index: 9;
+                top: 92px;
+                left: 80px;
+            }
+        .homeSubmenu{
+            width: 200px;
+                li{
+                background: #2b3031f0;
+                color: #ffffff;
+                font-weight: 500;
+                text-align: left;
+            }
+        }
+        
+        
+    }
+}
+
+#sidebar.active ul li a i {
+    margin-right: 0;
+    display: block;
+    font-size: 1.8em;
+    margin-bottom: 5px;
+}
+
+#sidebar.active ul ul a {
+    padding: 10px !important;
+}
+
+#sidebar.active .dropdown-toggle::after {
+    top: auto;
+    bottom: 10px;
+    right: 50%;
+    -webkit-transform: translateX(50%);
+    -ms-transform: translateX(50%);
+    transform: translateX(50%);
+}
+
+#sidebar .sidebar-header {
+    padding: 8px;
+//    background: #0000001f;
+      background: rgb(23,92,115);
+    background: linear-gradient(259deg, rgba(23,92,115,1) 0%, rgba(18,117,149,1) 100%);
+}
+
+#sidebar .sidebar-header strong {
+    display: none;
+    font-size: 1.8em;
+}
+
+#sidebar ul.components {
+    padding: 20px 0;
+    height: calc(100vh - 132px);
+//    overflow-y: scroll;
+//    overflow-x: hidden;
+    li{
+        position: relative;
+    }  
+    .responsive-side{
+        display: none;
+    }
+}
+
+#sidebar ul li a {
+    padding: 20px 5px;
+    font-size: 1.1em;
+    display: block;
+}
+
+#sidebar ul li a:hover {
+    color: #16627b;
+    background: #fff;
+    text-decoration: none;
+}
+
+#sidebar ul li a i {
+    margin-right: 10px;
+}
+
+#sidebar ul li.active>a,
+a[aria-expanded="true"] {
+    color:#2f2f2f;
+   background: #16627b30;
+}
+
+a[data-toggle="collapse"] {
+    position: relative;
+}
+
+.dropdown-toggle::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+ul ul a {
+    font-size: 0.9em !important;
+    padding-left: 30px !important;
+    background: #1a7b9c;
+    color: #fff !important;
+}
+
+ul.CTAs {
+    padding: 20px;
+}
+
+ul.CTAs a {
+    text-align: center;
+    font-size: 0.9em !important;
+    display: block;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+a.download {
+    background: #fff;
+    color: #7386D5;
+}
+
+a.article,
+a.article:hover {
+    background: #6d7fcc !important;
+    color: #fff !important;
+}
+
+/* ---------------------------------------------------
+    CONTENT STYLE
+----------------------------------------------------- */
+
+#content {
+    width: 100%;
+    padding: 0;
+    min-height: 100vh;
+    margin-left: 250px;
+    transition: all 0.3s;
+    &.active{
+        margin-left: 0px !important;
+    }
+}
+
+/* ---------------------------------------------------
+    MEDIAQUERIES
+----------------------------------------------------- */
+
+@media (max-width: 768px) {
+    #sidebar {
+        min-width: 80px;
+        max-width: 80px;
+        text-align: center;
+        margin-left: -80px !important;
+    }
+    .dropdown-toggle::after {
+        top: auto;
+        bottom: 10px;
+        right: 50%;
+        -webkit-transform: translateX(50%);
+        -ms-transform: translateX(50%);
+        transform: translateX(50%);
+    }
+    #sidebar.active {
+        margin-left: 0 !important;
+    }
+    #sidebar .sidebar-header h3,
+    #sidebar .CTAs {
+        display: none;
+    }
+    #sidebar .sidebar-header strong {
+        display: block;
+    }
+    #sidebar ul li a {
+        padding: 20px 10px;
+    }
+    #sidebar ul li a span {
+        font-size: 0.85em;
+    }
+    #sidebar ul li a i {
+        margin-right: 0;
+        display: block;
+    }
+    #sidebar ul ul a {
+        padding: 10px !important;
+    }
+    #sidebar ul li a i {
+        font-size: 1.3em;
+    }
+    #sidebar {
+        margin-left: 0;
+    }
+    #sidebarCollapse span {
+        display: none;
+    }
+}
+
+
+/* Shrinking the sidebar from 250px to 80px and center aligining its content*/
+#sidebar ul li a {
+    text-align: left;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+#sidebar.active ul li a {
+    padding: 20px 5px;
+    text-align: center;
+    font-size: 0.65em;
+}
+
+#sidebar.active ul li a i {
+    margin-right:  0;
+    display: block;
+    font-size: 1.8em;
+    margin-bottom: 5px;
+}
+
+/* Same dropdown links padding*/
+#sidebar.active ul ul a {
+    padding: 10px !important;
+}
+#sidebar{
+    .arrow-font{
+        position: relative;
+        font-size: 12px;
+        left: 10px;
+        transform: rotate(0);
+        transition: all 0.3s;
+    }
+    &.active{
+        .arrow-font{
+            font-size: 12px;
+            left: 0;
+        }
+    }
+}
+
+/* Changing the arrow position to bottom center position, 
+   translateX(50%) works with right: 50% 
+   to accurately  center the arrow */
+#sidebar.active .dropdown-toggle::after {
+    top: auto;
+    bottom: 10px;
+    right: 50%;
+    -webkit-transform: translateX(50%);
+    -ms-transform: translateX(50%);
+    transform: translateX(50%);
+}
+
+
+@media (max-width: 768px) {
+    /* 80px and its content aligned to centre. Pushing it off the screen with the
+       negative left margin
+    */
+    #sidebar.active {
+        min-width: 80px;
+        max-width: 80px;
+        text-align: center;
+        margin-left: -80px !important;
+    }
+
+
+    /* Reappearing the sidebar on toggle button click */
+    #sidebar {
+        margin-left: 0; 
+    }
+
+
+    /* Toggling the sidebar header content, 
+       hide the big heading [h3] and showing the small heading [strong] and vice versa
+    */
+    #sidebar .sidebar-header strong {
+        display: none;
+    }
+    #sidebar.active .sidebar-header h3 {
+        display: none;
+    }
+    #sidebar.active .sidebar-header strong {
+        display: block;
+    }
+
+    /* Downsize the navigation links font size */
+    #sidebar.active ul li a {
+        padding: 20px 10px;
+        font-size: 0.85em;
+    }
+
+    #sidebar.active ul li a i {
+        margin-right:  0;
+        display: block;
+        font-size: 1.8em;
+        margin-bottom: 5px;
+    }
+
+    /* Adjust the dropdown links padding*/
+    #sidebar.active ul ul a {
+        padding: 10px !important;
+    }
+
+    /* Changing the arrow position to bottom center position, 
+      translateX(50%) works with right: 50% 
+      to accurately  center the arrow */
+    .dropdown-toggle::after {
+        top: auto;
+        bottom: 10px;
+        right: 50%;
+        -webkit-transform: translateX(50%);
+        -ms-transform: translateX(50%);
+        transform: translateX(50%);
+    }
+}
+
+
+.list-unstyled{
+    img{
+//        margin-left: 20px;
+        margin-right: 5px; 
+        width: 18px;
+    }
+}
+.highcharts-credits{
+    display: none !important;
+}
+.charts-div{
+    border-radius: 2px;
+    box-shadow: 0px 0px 10px lightgrey;
+    width: 100%;
+    text-align: center;
+}
+#navbarSupportedContent{
+    ul{
+        li{
+            margin-left: 10px;
+        }
+        img{
+            width: 25px;
+            height: 25px;
+            margin-right: 8px;
+        }
+    }
+}
+.custom-box{
+    color: #fff;
+    height: 130px;
+    span{
+        display: block !important;
+        }
+    .inline-display{
+        font-size: 12px;
+        text-align: right;
+        margin-right: 10px;
+        margin-top: 10px;
+        font-weight: 200;
+    }
+    .main-fig{
+        font-size: 30px;
+        text-align: center;
+        margin-top: 17px;
+    }
+    .cust-bg{
+        position: relative;
+        background: #0000003b;
+        height: 30px;
+        border-radius: 50px;
+        margin: 0 40px;
+        span{
+            display: inline-block !important;
+        }
+        i{
+            position: relative;
+            top: 4px;
+        }
+        span{
+            position: relative;
+            top: 4px;
+        }
+    }
+}
+
+
+/*
+Sidebar 
+*/
+.list-group{
+    
+
+    a{
+        color: #fff !important;
+    }
+}
+#sidebar-container {
+    min-height: 100vh;   
+    background-color: #3e7f94;
+    padding: 0;
+}
+
+/* Sidebar sizes when expanded and expanded */
+.sidebar-expanded {
+    width: 230px;
+}
+.sidebar-collapsed {
+    width: 60px;
+}
+
+/* Menu item*/
+#sidebar-container .list-group a {
+    height: 50px;
+    color: #fff;
+    position: relative;
+    border-radius: 0px;
+}
+
+/* Submenu item*/
+#sidebar-container .list-group .sidebar-submenu a {
+    height: 45px;
+    padding-left: 30px;
+}
+.sidebar-submenu {
+    font-size: 0.9rem;
+}
+
+/* Separators */
+.sidebar-separator-title {
+    background-color: #333;
+    height: 35px;
+}
+.sidebar-separator {
+    background-color: #333;
+    height: 25px;
+}
+.logo-separator {
+    background-color: #333;    
+    height: 60px;
+}
+
+/* Closed submenu icon */
+#sidebar-container .list-group .list-group-item[aria-expanded="false"] .submenu-icon::after {
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900; 
+    content: "\f105";
+}
+/* Opened submenu icon */
+#sidebar-container .list-group .list-group-item[aria-expanded="true"] .submenu-icon::after {
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900; 
+    content: "\f107";
+}
+
+/*
+    Sidebar for Responsive
+*/
+#sidebar{
+    .bg-dark{
+        background: #343a408f !important;
+    }
+    &.active{
+        .menu-collapsed{
+            display: none;
+        }
+        .sidebar-submenu{
+            font-size: 0.9rem;
+            position: absolute;
+            left: 80px;
+            z-index: 999;
+             .bg-dark{
+                background: #2d2c2c !important;
+                    &:hover{
+                       background: #1b1b1b !important;
+                        }
+        }
+            .menu-collapsed{
+                display: block;
+                position: relative;
+                top: -7px;
+            }
+        }
+            .sidebar-submenu a{
+            top: -51px;
+        }
+        .align-items-center{
+            span{
+                font-size: 18px;
+                margin-left: 18px;
+                position: relative;
+                top: -7px;
+            }
+        }
+        #sidebar-container .list-group .sidebar-submenu a {
+    
+    text-align: left;
+    padding-left: 20px;
+    font-size: 12px;
+    font-weight: 100;
+            width: 200px;
+}
+        }
+    }
+.list-group{
+    overflow-y: auto;
+    height: 80vh;
+    padding-bottom: 40px;
+}

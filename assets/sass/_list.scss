@@ -1,0 +1,69 @@
+/*
+    This file is for Listing  Styling
+*/
+.filter-heading{
+    background: #15647e;
+    color: #fff;
+    text-align: center;
+    padding: 3px 15px;
+    border-radius: 2px;
+    font-weight: 100;
+    box-shadow: 4px 3px 5px 1px #a5acaf;
+    
+    h4{
+        display: inline-block;
+        margin-bottom: 0px;
+    }
+    .btn{
+        padding: .075rem .75rem;
+        float: right
+    }
+}
+.listing-table{
+    table{
+        td,th{
+            padding: 2px;
+            vertical-align: middle;
+        }
+        th{
+            font-size: 14px;
+            font-weight: 400;
+            background: #15647ed1;
+            color: #fff;
+            @include md{
+                font-size: 2.5vw;
+            }
+            &.srno{
+                width: 50px;
+            }
+        }
+        td{
+            font-size: 13px;
+            font-weight: 300;
+            @include md{
+                font-size: 2.4vw;
+            }
+            &.action{
+                text-align: center;
+                span{
+                    border: 1px solid #d6d6d6;
+                    width: 23px;
+                    text-align: center;
+                    color: #fff;
+                    padding: 2px;
+                    border-radius: 3px;
+                    cursor: pointer;
+                    &.edit{
+                        background: #1c841c;
+                    }
+                    &.view{
+                        background: #3453c5;
+                    }
+                    &.delete{
+                        background: #c51a1a;
+                    }
+                }
+            }
+        }
+    }
+}

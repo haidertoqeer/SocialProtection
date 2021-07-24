@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="assets/fonts/fontawesome/css/all.css">
+    <!-- Fav Icon -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico" />
+    <!-- Styling -->
+    <link rel="stylesheet" href="assets/css/style.css">
+        
+    <title>Listing | Report Management System</title>
+    <!--[if IE]>
+	<link rel="stylesheet" type="text/css" href="all-ie-only.css" />
+<![endif]-->
+    <!--[if lt IE 9]> -->
+
+<!-- <![endif]-->
+  </head>
+  <body id="main-page">
+    
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <img src="assets/images/logo-white.png" class="img-fluid" alt="">
+                <h3>Report Management System</h3>
+            </div>
+
+<!-- Bootstrap row -->
+<div class="row m-0" id="body-row">
+    <!-- Sidebar -->
+    <div id="sidebar-container" class="sidebar-expanded d-md-block" style="width: 100%;">
+        <!-- d-* hiddens the Sidebar in smaller devices. Its itens can be kept on the Navbar 'Menu' -->
+        <!-- Bootstrap List Group -->
+        <ul class="list-group" id="accordion">
+            <!-- Menu with submenu -->
+           <li class="li-tree1">
+                <a href="#submenu1" data-toggle="collapse" aria-expanded="false" class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
+                <div class="d-flex w-100 justify-content-start align-items-center">
+                    <span class="fas fa-tachometer-alt fa-fw mr-3"></span>
+                    <span class="menu-collapsed">Dashboard</span>
+                    <span class="submenu-icon ml-auto"></span>
+                </div>
+            </a>
+            <!-- Submenu content -->
+            <div id='submenu1' class="collapse sidebar-submenu"  data-parent="#accordion">
+                <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                    <span class="menu-collapsed">Chahgag</span>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                    <span class="menu-collapsed">Reports</span>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                    <span class="menu-collapsed">Tables</span>
+                </a>
+                 <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                    <span class="menu-collapsed">Chahgag</span>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                    <span class="menu-collapsed">Reports</span>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                    <span class="menu-collapsed">Tables</span>
+                </a>
+                 <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                    <span class="menu-collapsed">Chahgag</span>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                    <span class="menu-collapsed">Reports</span>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                    <span class="menu-collapsed">Tables</span>
+                </a>
+            </div>
+           </li>
+            <li class="li-tree1">
+                <a href="#submenu2" data-toggle="collapse" aria-expanded="false" class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
+                    <div class="d-flex w-100 justify-content-start align-items-center">
+                        <span class="fa fa-user fa-fw mr-3"></span>
+                        <span class="menu-collapsed">Profile</span>
+                        <span class="submenu-icon ml-auto"></span>
+                    </div>
+                </a>
+                <!-- Submenu content -->
+                <div id='submenu2' class="collapse sidebar-submenu"  data-parent="#accordion">
+                        <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                            <span class="menu-collapsed">Settings</span>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                            <span class="menu-collapsed">Password</span>
+                        </a>
+                </div>
+            </li>
+           <li class="li-tree1">
+                <a href="#" class="bg-dark list-group-item list-group-item-action">
+                <div class="d-flex w-100 justify-content-start align-items-center">
+                    <span class="fa fa-tasks fa-fw mr-3"></span>
+                    <span class="menu-collapsed">Tasks</span>
+                </div>
+            </a>
+           </li>
+        </ul><!-- List Group END-->
+    </div><!-- sidebar-container END -->
+    <!-- MAIN -->
+</div><!-- body-row END -->
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="btn">
+                        <i class="fas fa-align-left"></i>
+<!--                        <span>Toggle Sidebar</span>-->
+                    </button>
+                    <button class="btn d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" onclick="SidebarCollapse ()">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#"><img src="assets/images/icon/contacts.svg" class="img-fluid" alt=""> Contact</a>
+                            </li>
+                           <li class="nav-item">
+                                <a class="nav-link" href="#"><img src="assets/images/icon/negative-vote.svg" class="img-fluid" alt=""> Feedback</a>
+                            </li>
+                           <li class="nav-item">
+                                <a class="nav-link" href="#"><img src="assets/images/icon/businessman.svg" class="img-fluid" alt=""> Manager</a>
+                            </li>
+                            <li class="nav-item" style="margin-left: 40px;" data-toggle="tooltip" title="Signout"  id="logout" >
+                                <a class="nav-link" href="javascript:void(0)"><img src="assets/images/icon/gear.svg" class="img-fluid" alt=""></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+           <!-- Page Content Start Here  -->
+            <div class="content-wraper p-2 borderd-rounded">
+                <div class="row m-0">
+                    <div class="col-lg-12 filter-heading">
+                        <h4 class="">Listing Table</h4>
+                         <button class="btn btn-primary"><i class="fas fa-plus"></i> Add</button>
+                    </div>
+                    <div class="col-lg-12 listing-table mt-1">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th class="srno">Sr No.</th>
+                                    <th>Product</th>
+                                    <th>Batch No.</th>
+                                    <th>Manufacture</th>
+                                    <th>Quantity</th>
+                                    <th>Status</th>
+                                    <th class="text-center">Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Product Name</td>
+                                    <td>213245</td>
+                                    <td>Manufacture Name</td>
+                                    <td>2313</td>
+                                    <td>Active</td>
+                                    <td class="action">
+                                        <span class="edit" data-toggle="tooltip" title="Edit"><i class="fas fa-edit"></i></span>
+                                        <span class="view" data-toggle="tooltip" title="View"><i class="fas fa-eye"></i></span>
+                                        <span class="delete" data-toggle="tooltip" title="Delete"><i class="fas fa-trash"></i></span>    
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Product Name</td>
+                                    <td>213245</td>
+                                    <td>Manufacture Name</td>
+                                    <td>2313</td>
+                                    <td>Active</td>
+                                    <td class="action">
+                                        <span class="edit" data-toggle="tooltip" title="Edit"><i class="fas fa-edit"></i></span>
+                                        <span class="view" data-toggle="tooltip" title="View"><i class="fas fa-eye"></i></span>
+                                        <span class="delete" data-toggle="tooltip" title="Delete"><i class="fas fa-trash"></i></span>    
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Product Name</td>
+                                    <td>213245</td>
+                                    <td>Manufacture Name</td>
+                                    <td>2313</td>
+                                    <td>Active</td>
+                                    <td class="action">
+                                        <span class="edit" data-toggle="tooltip" title="Edit"><i class="fas fa-edit"></i></span>
+                                        <span class="view" data-toggle="tooltip" title="View"><i class="fas fa-eye"></i></span>
+                                        <span class="delete" data-toggle="tooltip" title="Delete"><i class="fas fa-trash"></i></span>    
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>Product Name</td>
+                                    <td>213245</td>
+                                    <td>Manufacture Name</td>
+                                    <td>2313</td>
+                                    <td>Active</td>
+                                    <td class="action">
+                                        <span class="edit" data-toggle="tooltip" title="Edit"><i class="fas fa-edit"></i></span>
+                                        <span class="view" data-toggle="tooltip" title="View"><i class="fas fa-eye"></i></span>
+                                        <span class="delete" data-toggle="tooltip" title="Delete"><i class="fas fa-trash"></i></span>    
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>Product Name</td>
+                                    <td>213245</td>
+                                    <td>Manufacture Name</td>
+                                    <td>2313</td>
+                                    <td>Active</td>
+                                    <td class="action">
+                                        <span class="edit" data-toggle="tooltip" title="Edit"><i class="fas fa-edit"></i></span>
+                                        <span class="view" data-toggle="tooltip" title="View"><i class="fas fa-eye"></i></span>
+                                        <span class="delete" data-toggle="tooltip" title="Delete"><i class="fas fa-trash"></i></span>    
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>Product Name</td>
+                                    <td>213245</td>
+                                    <td>Manufacture Name</td>
+                                    <td>2313</td>
+                                    <td>Active</td>
+                                    <td class="action">
+                                        <span class="edit" data-toggle="tooltip" title="Edit"><i class="fas fa-edit"></i></span>
+                                        <span class="view" data-toggle="tooltip" title="View"><i class="fas fa-eye"></i></span>
+                                        <span class="delete" data-toggle="tooltip" title="Delete"><i class="fas fa-trash"></i></span>    
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td>Product Name</td>
+                                    <td>213245</td>
+                                    <td>Manufacture Name</td>
+                                    <td>2313</td>
+                                    <td>Active</td>
+                                    <td class="action">
+                                        <span class="edit" data-toggle="tooltip" title="Edit"><i class="fas fa-edit"></i></span>
+                                        <span class="view" data-toggle="tooltip" title="View"><i class="fas fa-eye"></i></span>
+                                        <span class="delete" data-toggle="tooltip" title="Delete"><i class="fas fa-trash"></i></span>    
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>8</td>
+                                    <td>Product Name</td>
+                                    <td>213245</td>
+                                    <td>Manufacture Name</td>
+                                    <td>2313</td>
+                                    <td>Active</td>
+                                    <td class="action">
+                                        <span class="edit" data-toggle="tooltip" title="Edit"><i class="fas fa-edit"></i></span>
+                                        <span class="view" data-toggle="tooltip" title="View"><i class="fas fa-eye"></i></span>
+                                        <span class="delete" data-toggle="tooltip" title="Delete"><i class="fas fa-trash"></i></span>    
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>9</td>
+                                    <td>Product Name</td>
+                                    <td>213245</td>
+                                    <td>Manufacture Name</td>
+                                    <td>2313</td>
+                                    <td>Active</td>
+                                    <td class="action">
+                                        <span class="edit" data-toggle="tooltip" title="Edit"><i class="fas fa-edit"></i></span>
+                                        <span class="view" data-toggle="tooltip" title="View"><i class="fas fa-eye"></i></span>
+                                        <span class="delete" data-toggle="tooltip" title="Delete"><i class="fas fa-trash"></i></span>    
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>10</td>
+                                    <td>Product Name</td>
+                                    <td>213245</td>
+                                    <td>Manufacture Name</td>
+                                    <td>2313</td>
+                                    <td>Active</td>
+                                    <td class="action">
+                                        <span class="edit" data-toggle="tooltip" title="Edit"><i class="fas fa-edit"></i></span>
+                                        <span class="view" data-toggle="tooltip" title="View"><i class="fas fa-eye"></i></span>
+                                        <span class="delete" data-toggle="tooltip" title="Delete"><i class="fas fa-trash"></i></span>    
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>11</td>
+                                    <td>Product Name</td>
+                                    <td>213245</td>
+                                    <td>Manufacture Name</td>
+                                    <td>2313</td>
+                                    <td>Active</td>
+                                    <td class="action">
+                                        <span class="edit" data-toggle="tooltip" title="Edit"><i class="fas fa-edit"></i></span>
+                                        <span class="view" data-toggle="tooltip" title="View"><i class="fas fa-eye"></i></span>
+                                        <span class="delete" data-toggle="tooltip" title="Delete"><i class="fas fa-trash"></i></span>    
+                                    </td>
+                                </tr>
+                                 <tr>
+                                    <td>12</td>
+                                    <td>Product Name</td>
+                                    <td>213245</td>
+                                    <td>Manufacture Name</td>
+                                    <td>2313</td>
+                                    <td>Active</td>
+                                    <td class="action">
+                                        <span class="edit" data-toggle="tooltip" title="Edit"><i class="fas fa-edit"></i></span>
+                                        <span class="view" data-toggle="tooltip" title="View"><i class="fas fa-eye"></i></span>
+                                        <span class="delete" data-toggle="tooltip" title="Delete"><i class="fas fa-trash"></i></span>    
+                                    </td>
+                                </tr>
+                                 <tr>
+                                    <td>13</td>
+                                    <td>Product Name</td>
+                                    <td>213245</td>
+                                    <td>Manufacture Name</td>
+                                    <td>2313</td>
+                                    <td>Active</td>
+                                    <td class="action">
+                                        <span class="edit" data-toggle="tooltip" title="Edit"><i class="fas fa-edit"></i></span>
+                                        <span class="view" data-toggle="tooltip" title="View"><i class="fas fa-eye"></i></span>
+                                        <span class="delete" data-toggle="tooltip" title="Delete"><i class="fas fa-trash"></i></span>    
+                                    </td>
+                                </tr>
+                                 <tr>
+                                    <td>14</td>
+                                    <td>Product Name</td>
+                                    <td>213245</td>
+                                    <td>Manufacture Name</td>
+                                    <td>2313</td>
+                                    <td>Active</td>
+                                    <td class="action">
+                                        <span class="edit" data-toggle="tooltip" title="Edit"><i class="fas fa-edit"></i></span>
+                                        <span class="view" data-toggle="tooltip" title="View"><i class="fas fa-eye"></i></span>
+                                        <span class="delete" data-toggle="tooltip" title="Delete"><i class="fas fa-trash"></i></span>    
+                                    </td>
+                                </tr>
+                                 <tr>
+                                    <td>15</td>
+                                    <td>Product Name</td>
+                                    <td>213245</td>
+                                    <td>Manufacture Name</td>
+                                    <td>2313</td>
+                                    <td>Active</td>
+                                    <td class="action">
+                                        <span class="edit" data-toggle="tooltip" title="Edit"><i class="fas fa-edit"></i></span>
+                                        <span class="view" data-toggle="tooltip" title="View"><i class="fas fa-eye"></i></span>
+                                        <span class="delete" data-toggle="tooltip" title="Delete"><i class="fas fa-trash"></i></span>    
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="col-lg-12 pagination-col">
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination justify-content-end">
+                                <li class="page-item disabled">
+                                    <a class="page-link" href="#" tabindex="-1">Previous</a>
+                                </li>
+                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item active"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#">Next</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+           <!-- Page Content End Here -->
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="assets/js/jquery-3.4.1.min.js"></script>
+    <script src="assets/bootstrap/popper.min.js"></script>
+    <script src="assets/bootstrap/bootstrap.min.js"></script>
+    <!-- wysihtml -->
+    <script src="http://voog.github.io/wysihtml/bower_components/wysihtml/dist/minified/wysihtml.min.js"></script>
+    <script src="http://voog.github.io/wysihtml/bower_components/wysihtml/dist/minified/wysihtml.all-commands.min.js"></script> 
+    <script src="http://voog.github.io/wysihtml/bower_components/wysihtml/dist/minified/wysihtml.table_editing.min.js"></script> 
+    <script src="http://voog.github.io/wysihtml/bower_components/wysihtml/dist/minified/wysihtml.toolbar.min.js"></script>
+    <script src="http://voog.github.io/wysihtml/bower_components/wysihtml/parser_rules/advanced_and_extended.js"></script>
+    
+      <script type="text/javascript">
+       $(document).ready(function () {
+
+    $('#sidebarCollapse').on('click', function () {
+        $('#sidebar').toggleClass('active');
+        $('#content').toggleClass('active');
+    });
+           var editor = new wysihtml.Editor(document.getElementById('editor'), {
+    toolbar:document.getElementById('toolbar'),
+    parserRules:  wysihtmlParserRules
+  });
+
+});
+          
+          // Function For Tooltips
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+
+          
+        $(function() {
+            $(".li-tree").on("click", function(e) {
+                    $(".li-tree .sidebar-submenu").not(this).removeClass("show");
+                    $(this).toggleClass("show");
+                    e.stopPropagation()
+                });
+            $(document).on("click", function(e) {
+//                if ($(e.target).is("ul.responsive-side") === false) {
+//                    $(".li-tree.intro").removeClass("intro");
+////                    alert ('this is sidebar');
+//                  
+//                }
+//                else{
+//                     $('.li-tree.intro').addClass("");
+//                }
+            });
+        });
+</script>
+<script>
+    $('#body-row .collapse').collapse('hide'); 
+
+// Collapse/Expand icon
+$('#collapse-icon').addClass('fa-angle-double-left'); 
+
+// Collapse click
+$('[data-toggle=sidebar-colapse]').click(function() {
+    SidebarCollapse();
+});
+
+function SidebarCollapse () {
+    $('.menu-collapsed').toggleClass('d-none');
+    $('.sidebar-submenu').toggleClass('d-none');
+    $('.submenu-icon').toggleClass('d-none');
+    $('#sidebar-container').toggleClass('sidebar-expanded sidebar-collapsed');
+    
+    // Treating d-flex/d-none on separators with title
+    var SeparatorTitle = $('.sidebar-separator-title');
+    if ( SeparatorTitle.hasClass('d-flex') ) {
+        SeparatorTitle.removeClass('d-flex');
+    } else {
+        SeparatorTitle.addClass('d-flex');
+    }
+    
+    // Collapse/Expand icon
+    $('#collapse-icon').toggleClass('fa-angle-double-left fa-angle-double-right');
+}
+</script>
+ <script>
+
+     $(window).on('load', function(){
+      var win = $(this);
+      if (win.width() < 768) { 
+
+      $('#sidebar').addClass('active');
+           $('#content').addClass('active');
+
+      }
+    else
+    {
+        $('#sidebar').removeClass('active');
+        $('#content').removeClass('active');
+    }
+
+});
+          $(window).on('resize1', function(){
+     
+       if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+
+      $('#sidebar').addClass('active');
+           $('#content').addClass('active');
+
+      }
+    else
+    {
+        $('#sidebar').removeClass('active');
+        $('#content').removeClass('active');
+    }
+
+});
+     
+  if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+ // some code..
+      
+}
+</script>
+  </body>
+</html>

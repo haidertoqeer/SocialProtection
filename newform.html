@@ -1,0 +1,1774 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="assets/fonts/fontawesome/css/all.css">
+    <!-- Fav Icon -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico" />
+    <!-- Styling -->
+    <link rel="stylesheet" href="assets/css/style.css">
+        
+    <title>Blank | Report Management System</title>
+    <!--[if IE]>
+	<link rel="stylesheet" type="text/css" href="all-ie-only.css" />
+<![endif]-->
+    <!--[if lt IE 9]> -->
+
+<!-- <![endif]-->
+  </head>
+  <body id="main-page">
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <img src="assets/images/logo-white.png" class="img-fluid" alt="">
+                <h3>Report Management System</h3>
+            </div>
+
+            <!-- Bootstrap row -->
+            <div class="row m-0" id="body-row">
+                <!-- Sidebar -->
+                <div id="sidebar-container" class="sidebar-expanded d-md-block" style="width: 100%;">
+                    <!-- d-* hiddens the Sidebar in smaller devices. Its itens can be kept on the Navbar 'Menu' -->
+                    <!-- Bootstrap List Group -->
+                    <ul class="list-group" id="accordion">
+                        <!-- Menu with submenu -->
+                       <li class="li-tree1">
+                            <a href="#submenu1" data-toggle="collapse" aria-expanded="false" class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
+                            <div class="d-flex w-100 justify-content-start align-items-center">
+                                <span class="fas fa-tachometer-alt fa-fw mr-3"></span>
+                                <span class="menu-collapsed">Dashboard</span>
+                                <span class="submenu-icon ml-auto"></span>
+                            </div>
+                        </a>
+                        <!-- Submenu content -->
+                        <div id='submenu1' class="collapse sidebar-submenu"  data-parent="#accordion">
+                            <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                                <span class="menu-collapsed">Chahgag</span>
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                                <span class="menu-collapsed">Reports</span>
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                                <span class="menu-collapsed">Tables</span>
+                            </a>
+                             <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                                <span class="menu-collapsed">Chahgag</span>
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                                <span class="menu-collapsed">Reports</span>
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                                <span class="menu-collapsed">Tables</span>
+                            </a>
+                             <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                                <span class="menu-collapsed">Chahgag</span>
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                                <span class="menu-collapsed">Reports</span>
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                                <span class="menu-collapsed">Tables</span>
+                            </a>
+                        </div>
+                       </li>
+                        <li class="li-tree1">
+                            <a href="#submenu2" data-toggle="collapse" aria-expanded="false" class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
+                                <div class="d-flex w-100 justify-content-start align-items-center">
+                                    <span class="fa fa-user fa-fw mr-3"></span>
+                                    <span class="menu-collapsed">Profile</span>
+                                    <span class="submenu-icon ml-auto"></span>
+                                </div>
+                            </a>
+                            <!-- Submenu content -->
+                            <div id='submenu2' class="collapse sidebar-submenu"  data-parent="#accordion">
+                                <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                                    <span class="menu-collapsed">Settings</span>
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                                    <span class="menu-collapsed">Password</span>
+                                </a>
+                            </div>
+                        </li>
+                       <li class="li-tree1">
+                            <a href="#" class="bg-dark list-group-item list-group-item-action">
+                                <div class="d-flex w-100 justify-content-start align-items-center">
+                                    <span class="fa fa-tasks fa-fw mr-3"></span>
+                                    <span class="menu-collapsed">Tasks</span>
+                                </div>
+                            </a>
+                       </li>
+                    </ul><!-- List Group END-->
+                </div><!-- sidebar-container END -->
+                <!-- MAIN -->
+            </div><!-- body-row END -->
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="btn">
+                        <i class="fas fa-align-left"></i>
+<!--                        <span>Toggle Sidebar</span>-->
+                    </button>
+                    <button class="btn d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" onclick="SidebarCollapse ()">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#"><img src="assets/images/icon/contacts.svg" class="img-fluid" alt=""> Contact</a>
+                            </li>
+                           <li class="nav-item">
+                                <a class="nav-link" href="#"><img src="assets/images/icon/negative-vote.svg" class="img-fluid" alt=""> Feedback</a>
+                            </li>
+                           <li class="nav-item">
+                                <a class="nav-link" href="#"><img src="assets/images/icon/businessman.svg" class="img-fluid" alt=""> Manager</a>
+                            </li>
+                            <li class="nav-item" style="margin-left: 40px;" data-toggle="tooltip" title="Signout"  id="logout" >
+                                <a class="nav-link" href="javascript:void(0)"><img src="assets/images/icon/gear.svg" class="img-fluid" alt=""></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+           <!-- Page Content Start Here  -->
+            <div class="col-sm-12">
+            <div class="card">
+              <div class="title">
+                Add FM-2 Facility Monthly Malaria Reporting Form 
+              </div>
+              <div class="card-body">
+                <table class="table table-bordered table-striped  tbl-listing table-hover mb0">
+                  <tbody>
+                    <tr>
+                      <td><label>Health Facility Name</label>
+                          <urdu>ھیلتھ سنٹر / ھسپتال کا نام</urdu>
+                      </td>
+                      <td><select class="form-control" id="" name="">
+                            <option value="">Select</option>
+                            <option value="">Select</option> 
+                            <option value="">Select</option> 
+                            <option value="">Select</option>         
+                          </select>
+                      </td>
+                      <td><label>Health Facility Code (DHIS):</label>
+                          <urdu>ھیلتھ سنٹر / ھسپتال کا کوڈ</urdu>
+                      </td>
+                      <td><input class="form-control" id="" type="text" readonly="readonly"></td>
+                      <td><label>Type of Centre</label>
+                          <urdu>ھیلتھ سنٹر کو نسا ہے؟ (مائیکروسکوپی ، آر-ڈی-ٹی یا پرائیویٹ)</urdu>
+                      </td>
+                      <td><select class="form-control" id="" name="">
+                            <option value="">Microscopy</option>
+                            <option value="">RDT</option>
+                            <option value="">Other-Private</option>         
+                          </select>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><label>Union Council</label>
+                          <urdu>یُونین کونسل</urdu>
+                      </td>
+                      <td><select class="form-control" id="" name="">
+                            <option value="">Select</option>          
+                          </select>
+                      </td>
+                      <td><label>Tehsil</label>
+                          <urdu>تحصِیل کا نا م</urdu>
+                      </td>
+                      <td><select class="form-control" id="" name="">
+                            <option value="">Select</option>          
+                          </select>
+                      </td>
+                      <td><label>District</label>
+                          <urdu>ضِلع</urdu>
+                      </td>
+                      <td><select class="form-control" id="" name="">
+                            <option value="">Select</option>          
+                          </select>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><label>Province</label>
+                          <urdu>صُوبہ</urdu>
+                      </td>
+                      <td><select class="form-control" id="" name="">
+                            <option value="">Select</option>          
+                          </select>
+                      </td>
+                      <td><label>Total Catchment Population</label>
+                          <urdu>کُل مُنسلکہ آبادی</urdu>
+                      </td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><label>Month</label>
+                          <urdu>مہینہ</urdu>
+                      </td>
+                      <td><select class="form-control" id="" name="">
+                            <option value="">Select</option>          
+                          </select>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><label>Year</label>
+                          <urdu>سال</urdu>
+                      </td>
+                      <td><select class="form-control" id="" name="">
+                            <option value="">Select</option>          
+                          </select>
+                      </td>
+                      <td><label>Date of Submission</label>
+                          <urdu>رپورٹ جمع کروانے کی تاریخ</urdu>
+                      </td>
+                      <td><input class="form-control dp" id="" type="text"></td>
+                    </tr>
+                  </tbody>
+                </table>
+                <table class="table table-bordered table-striped  tbl-add-form table-hover mb0">
+                  <thead>
+                    <tr>
+                      <th colspan="2">Section 2.1-SUSPECT <urduin>مشتبہ</urduin></th>
+                    </tr>
+                    <tr>
+                      <td colspan="2">OPD Record</td>
+                    </tr>
+                    <tr>
+                      <td>Total Facility Montdly OPD</td>
+                      <td>Total Malaria Suspects</td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                    </tr>
+                  </tbody>
+                </table>
+                <table class="table table-bordered table-striped  tbl-add-form table-hover mb0">
+                  <thead>
+                    <tr>
+                      <th colspan="15">2.2-CASE MANAGEMENT (From FM-1 Register) <urduin>رجسٹر سے کیس مینجمنٹ FM-1</urduin></th>
+                    </tr>
+                    <tr>
+                      <td rowspan="3">Page</td>
+                      <td colspan="2">Diagnosis</td>
+                      <td colspan="8">Confirmed(RDT+Microscopy)</td>
+                      <td rowspan="3">Clinical</td>
+                      <td colspan="2">G6PD Test</td>
+                      <td rowspan="3">Action</td>
+                    </tr>
+                    <tr>
+                      <td colspan="2">Malaria Test</td>
+                      <td colspan="3">Species</td>
+                      <td colspan="2">Sex</td>
+                      <td colspan="2">Age</td>
+                      <td rowspan="2">Pregnant</td>
+                      <td rowspan="2">Screened</td>
+                      <td rowspan="2">Deficient</td>
+                    </tr>
+                    <tr>
+                      <td rowspan="2">Screened</td>
+                      <td rowspan="2">Positive</td>
+                      <td rowspan="2">PF</td>
+                      <td rowspan="2">PV</td>
+                      <td rowspan="2">Mix</td>
+                      <td rowspan="2">M</td>
+                      <td rowspan="2">F</td>
+                      <td rowspan="2">&lt;5Yrs</td>
+                      <td rowspan="2">&gt;Yrs</td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Page1</td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td class="text-center"><button type="button" class="btn btn-success btn-xs"><i class="fa fa-plus fa-2x"></i></button></td>
+                    </tr>
+                    <tr>
+                      <td>Page2</td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td class="text-center"><button type="button" class="btn btn-success btn-xs"><i class="fa fa-plus fa-2x"></i></button></td>
+                    </tr>
+                  </tbody>
+                </table>
+                <table class="table table-bordered table-striped  tbl-add-form table-hover mb0">
+                  <thead>
+                    <tr>
+                      <th colspan="17">2.2-CASE MANAGEMENT (From FM-1 Register) <urduin>رجسٹر سے کیس مینجمنٹ FM-1</urduin></th>
+                    </tr>
+                    <tr>
+                      <td rowspan="4">Page</td>
+                      <td colspan="9">Treatment(Write number of units or dose as guided</td>
+                      <td colspan="6">Action Taken</td>
+                      <td rowspan="4">Action</td>
+                    </tr>
+                    <tr>
+                      <td colspan="7">Uncomplicated</td>
+                      <td colspan="2">Severe</td>
+                      <td colspan="6">Treated As per National Guideline</td>
+                    </tr>
+                    <tr>
+                      <td rowspan="2">ACT (AS+SP)</td>
+                      <td colspan="2">CQ</td>
+                      <td rowspan="2">Primaquin</td>
+                      <td rowspan="2">ACT (A+L)</td>
+                      <td rowspan="2">Tab Quinine</td>
+                      <td rowspan="2">Otder</td>
+                      <td rowspan="2">Inj Artesunate</td>
+                      <td rowspan="2">Inj Quinine</td>
+                      <td colspan="2">Sex</td>
+                      <td colspan="2">Age</td>
+                      <td colspan="2">Rx Type</td>
+                    </tr>
+                    <tr>
+                      <td>Tab</td>
+                      <td>Syp</td>
+                      <td>M</td>
+                      <td>F</td>
+                      <td>&lt;5Yrs</td>
+                      <td>&gt;5Yrs</td>
+                      <td>ACT</td>
+                      <td>Non-ACT</td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Page1</td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td class="text-center"><button type="button" class="btn btn-success btn-xs"><i class="fa fa-plus fa-2x"></i></button></td>
+                    </tr>
+                    <tr>
+                      <td>Page2</td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td class="text-center"><button type="button" class="btn btn-success btn-xs"><i class="fa fa-plus fa-2x"></i></button></td>
+                    </tr>
+                  </tbody>
+                </table>
+                <table class="table table-bordered table-striped  tbl-add-form table-hover mb0">
+                  <thead>
+                    <tr>
+                      <th colspan="6">2.3-ADMISSION &amp; DEATHS (From OPD &amp; In Patient Record) <urduin>داخلہ اور موت او-پی-ڈی سے  مریض ریکارڈ میں)</urduin></th>
+                    </tr>
+                    <tr>
+                      <td colspan="3">Admissions</td>
+                      <td colspan="3">Deaths</td>
+                    </tr>
+                    <tr>
+                      <td>Total Admissions</td>
+                      <td>Total Malaria Admissions</td>
+                      <td>PV Cases Admissions</td>
+                      <td>Total Deaths</td>
+                      <td>Total Deaths Due to Malaria</td>
+                      <td>Deaths due to PV</td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                    </tr>
+                  </tbody>
+                </table>
+                <table class="table table-bordered table-striped  tbl-add-form table-hover mb0">
+                  <thead>
+                    <tr>
+                      <th colspan="12">2.4-STOCK LEVEL <urduin>اسٹاک کی صُورتِ حال</urduin></th>
+                    </tr>
+                    <tr>
+                      <td colspan="12">Stocks (From Stock Register) <urduin>اسٹا ک رجسٹر سے تعداد لکھیں</urduin></td>
+                    </tr>
+                    <tr>
+                      <td rowspan="2">Items</td>
+                      <td rowspan="2">Unit</td>
+                      <td>A</td>
+                      <td>B</td>
+                      <td>C</td>
+                      <td>D</td>
+                      <td>E</td>
+                      <td>F</td>
+                      <td>G</td>
+                      <td>H</td>
+                      <td>I</td>
+                      <td rowspan="2">Comments</td>
+                    </tr>
+                    <tr>
+                      <td>Start Balance</td>
+                      <td>Received during Month</td>
+                      <td>Utilized / Dispensed</td>
+                      <td>Discarded / Wasted</td>
+                      <td>Total Expensed (E=C+D)</td>
+                      <td>Returned to District/SR</td>
+                      <td>Closing Balance G=(A+B)-(E+F)</td>
+                      <td># Days Out of Stock</td>
+                      <td>Out of stock for 7 continious working days (Yes/No)</td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Rapid Diagnostic Tests (RDTs)</td>
+                      <td>Kit</td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td>
+                        <table>
+                          <tbody>
+                            <tr>
+                              <td>Yes</td>
+                              <td><input class="form-control" id="" type="radio"></td>
+                              <td>No</td>
+                              <td><input class="form-control" id="" type="radio"></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                      <td><input class="form-control" id="" type="text"></td>
+                    </tr>
+                    <tr>
+                      <td>G6PD Screening Kits</td>
+                      <td>Kit</td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td>
+                        <table>
+                          <tbody>
+                            <tr>
+                              <td>Yes</td>
+                              <td><input class="form-control" id="" type="radio"></td>
+                              <td>No</td>
+                              <td><input class="form-control" id="" type="radio"></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                      <td><input class="form-control" id="" type="text"></td>
+                    </tr>
+                  </tbody>
+                </table>
+                <table class="table table-bordered table-striped  tbl-add-form table-hover mb0">
+                  <thead>
+                    <tr>
+                      <td colspan="12">LAB SUPPLIES <urduin>لیبا رٹری کی اشیا</urduin></td>
+                    </tr>
+                    <tr>
+                      <td rowspan="2">Items</td>
+                      <td rowspan="2">Unit</td>
+                      <td>A</td>
+                      <td>B</td>
+                      <td>C</td>
+                      <td>D</td>
+                      <td>E</td>
+                      <td>F</td>
+                      <td>G</td>
+                      <td>H</td>
+                      <td>I</td>
+                      <td rowspan="2">Comments</td>
+                    </tr>
+                    <tr>
+                      <td>Start Balance</td>
+                      <td>Received during Month</td>
+                      <td>Utilized / Dispensed</td>
+                      <td>Discarded / Wasted</td>
+                      <td>Total Expensed (E=C+D)</td>
+                      <td>Returned to District/SR</td>
+                      <td>Closing Balance G=(A+B)-(E+F)</td>
+                      <td># Days Out of Stock</td>
+                      <td>Out of stock for 7 continious working days (Yes/No)</td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Microscope</td>
+                      <td>Piece</td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td>
+                        <table>
+                          <tbody>
+                            <tr>
+                              <td>Yes</td>
+                              <td><input class="form-control" id="" type="radio"></td>
+                              <td>No</td>
+                              <td><input class="form-control" id="" type="radio"></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                      <td><input class="form-control" id="" type="text"></td>
+                    </tr>
+                    <tr>
+                      <td>Stop Watch</td>
+                      <td>Piece</td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td>
+                        <table>
+                          <tbody>
+                            <tr>
+                              <td>Yes</td>
+                              <td><input class="form-control" id="" type="radio"></td>
+                              <td>No</td>
+                              <td><input class="form-control" id="" type="radio"></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                      <td><input class="form-control" id="" type="text"></td>
+                    </tr>
+                    <tr>
+                      <td>Slides</td>
+                      <td>Piece</td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td>
+                        <table>
+                          <tbody>
+                            <tr>
+                              <td>Yes</td>
+                              <td><input class="form-control" id="" type="radio"></td>
+                              <td>No</td>
+                              <td><input class="form-control" id="" type="radio"></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                      <td><input class="form-control" id="" type="text"></td>
+                    </tr>
+                    <tr>
+                      <td>Prickers</td>
+                      <td>Piece</td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td>
+                        <table>
+                          <tbody>
+                            <tr>
+                              <td>Yes</td>
+                              <td><input class="form-control" id="" type="radio"></td>
+                              <td>No</td>
+                              <td><input class="form-control" id="" type="radio"></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                      <td><input class="form-control" id="" type="text"></td>
+                    </tr>
+                    <tr>
+                      <td>Sharps Box</td>
+                      <td>Piece</td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td>
+                        <table>
+                          <tbody>
+                            <tr>
+                              <td>Yes</td>
+                              <td><input class="form-control" id="" type="radio"></td>
+                              <td>No</td>
+                              <td><input class="form-control" id="" type="radio"></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                      <td><input class="form-control" id="" type="text"></td>
+                    </tr>
+                    <tr>
+                      <td>Reagents (Methanol)</td>
+                      <td>Piece</td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td>
+                        <table>
+                          <tbody>
+                            <tr>
+                              <td>Yes</td>
+                              <td><input class="form-control" id="" type="radio"></td>
+                              <td>No</td>
+                              <td><input class="form-control" id="" type="radio"></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                      <td><input class="form-control" id="" type="text"></td>
+                    </tr>
+                    <tr>
+                      <td>Reagents(Giemsa Stain)</td>
+                      <td>Piece</td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td>
+                        <table>
+                          <tbody>
+                            <tr>
+                              <td>Yes</td>
+                              <td><input class="form-control" id="" type="radio"></td>
+                              <td>No</td>
+                              <td><input class="form-control" id="" type="radio"></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                      <td><input class="form-control" id="" type="text"></td>
+                    </tr>
+                    <tr>
+                      <td>Immersion Oil</td>
+                      <td>Piece</td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td>
+                        <table>
+                          <tbody>
+                            <tr>
+                              <td>Yes</td>
+                              <td><input class="form-control" id="" type="radio"></td>
+                              <td>No</td>
+                              <td><input class="form-control" id="" type="radio"></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                      <td><input class="form-control" id="" type="text"></td>
+                    </tr>
+                    <tr>
+                      <td>Lense Paper</td>
+                      <td>Piece</td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td>
+                        <table>
+                          <tbody>
+                            <tr>
+                              <td>Yes</td>
+                              <td><input class="form-control" id="" type="radio"></td>
+                              <td>No</td>
+                              <td><input class="form-control" id="" type="radio"></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                      <td><input class="form-control" id="" type="text"></td>
+                    </tr>
+                    <tr>
+                      <td>Slides Box</td>
+                      <td>Piece</td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td>
+                        <table>
+                          <tbody>
+                            <tr>
+                              <td>Yes</td>
+                              <td><input class="form-control" id="" type="radio"></td>
+                              <td>No</td>
+                              <td><input class="form-control" id="" type="radio"></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                      <td><input class="form-control" id="" type="text"></td>
+                    </tr>
+                    <tr>
+                      <td><input class="form-control zp" id="" type="text" placeholder="  Other supplies"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td>
+                        <table>
+                          <tbody>
+                            <tr>
+                              <td>Yes</td>
+                              <td><input class="form-control" id="" type="radio"></td>
+                              <td>No</td>
+                              <td><input class="form-control" id="" type="radio"></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                      <td><input class="form-control" id="" type="text"></td>
+                    </tr>
+                  </tbody>
+                </table>
+                <table class="table table-bordered table-striped  tbl-add-form table-hover mb0">
+                  <thead>
+                    <tr>
+                      <td colspan="12">DRUGS <urduin>ادویات</urduin></td>
+                    </tr>
+                    <tr>
+                      <td rowspan="2">Items</td>
+                      <td rowspan="2">Unit</td>
+                      <td>A</td>
+                      <td>B</td>
+                      <td>C</td>
+                      <td>D</td>
+                      <td>E</td>
+                      <td>F</td>
+                      <td>G</td>
+                      <td>H</td>
+                      <td>I</td>
+                      <td rowspan="2">Comments</td>
+                    </tr>
+                    <tr>
+                      <td>Start Balance</td>
+                      <td>Received during Month</td>
+                      <td>Utilized / Dispensed</td>
+                      <td>Discarded / Wasted</td>
+                      <td>Total Expensed (E=C+D)</td>
+                      <td>Returned to District/SR</td>
+                      <td>Closing Balance G=(A+B)-(E+F)</td>
+                      <td># Days Out of Stock</td>
+                      <td>Out of stock for 7 continious working days (Yes/No)</td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>ACT/SP 3+1</td>
+                      <td>Dose</td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td>
+                        <table>
+                          <tbody>
+                            <tr>
+                              <td>Yes</td>
+                              <td><input class="form-control" id="" type="radio"></td>
+                              <td>No</td>
+                              <td><input class="form-control" id="" type="radio"></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                      <td><input class="form-control" id="" type="text"></td>
+                    </tr>
+                    <tr>
+                      <td>ACT/SP 6+2 Chidren</td>
+                      <td>Dose</td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td>
+                        <table>
+                          <tbody>
+                            <tr>
+                              <td>Yes</td>
+                              <td><input class="form-control" id="" type="radio"></td>
+                              <td>No</td>
+                              <td><input class="form-control" id="" type="radio"></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                      <td><input class="form-control" id="" type="text"></td>
+                    </tr>
+                    <tr>
+                      <td>ACT/SP 6+3 Adult</td>
+                      <td>Dose</td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td>
+                        <table>
+                          <tbody>
+                            <tr>
+                              <td>Yes</td>
+                              <td><input class="form-control" id="" type="radio"></td>
+                              <td>No</td>
+                              <td><input class="form-control" id="" type="radio"></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                      <td><input class="form-control" id="" type="text"></td>
+                    </tr>
+                    <tr>
+                      <td>ACT/ AL 6 (5-14kg)</td>
+                      <td>Dose</td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td>
+                        <table>
+                          <tbody>
+                            <tr>
+                              <td>Yes</td>
+                              <td><input class="form-control" id="" type="radio"></td>
+                              <td>No</td>
+                              <td><input class="form-control" id="" type="radio"></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                      <td><input class="form-control" id="" type="text"></td>
+                    </tr>
+                    <tr>
+                      <td>ACT/ AL 12 (15-24kg)</td>
+                      <td>Dose</td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td>
+                        <table>
+                          <tbody>
+                            <tr>
+                              <td>Yes</td>
+                              <td><input class="form-control" id="" type="radio"></td>
+                              <td>No</td>
+                              <td><input class="form-control" id="" type="radio"></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                      <td><input class="form-control" id="" type="text"></td>
+                    </tr>
+                    <tr>
+                      <td>ACT/ AL 18 (25-34kg)</td>
+                      <td>Dose</td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td>
+                        <table>
+                          <tbody>
+                            <tr>
+                              <td>Yes</td>
+                              <td><input class="form-control" id="" type="radio"></td>
+                              <td>No</td>
+                              <td><input class="form-control" id="" type="radio"></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                      <td><input class="form-control" id="" type="text"></td>
+                    </tr>
+                    <tr>
+                      <td>ACT/ AL 24 (35kg +)</td>
+                      <td>Dose</td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td>
+                        <table>
+                          <tbody>
+                            <tr>
+                              <td>Yes</td>
+                              <td><input class="form-control" id="" type="radio"></td>
+                              <td>No</td>
+                              <td><input class="form-control" id="" type="radio"></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                      <td><input class="form-control" id="" type="text"></td>
+                    </tr>
+                    <tr>
+                      <td>Inj Artesunate 60 mg</td>
+                      <td>Inj</td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td>
+                        <table>
+                          <tbody>
+                            <tr>
+                              <td>Yes</td>
+                              <td><input class="form-control" id="" type="radio"></td>
+                              <td>No</td>
+                              <td><input class="form-control" id="" type="radio"></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                      <td><input class="form-control" id="" type="text"></td>
+                    </tr>
+                    <tr>
+                      <td>Tab Chloroquin Phosphate 150mg</td>
+                      <td>Tab</td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td>
+                        <table>
+                          <tbody>
+                            <tr>
+                              <td>Yes</td>
+                              <td><input class="form-control" id="" type="radio"></td>
+                              <td>No</td>
+                              <td><input class="form-control" id="" type="radio"></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                      <td><input class="form-control" id="" type="text"></td>
+                    </tr>
+                    <tr>
+                      <td>Tab Primaquin 7.5 mg</td>
+                      <td>Tab</td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td>
+                        <table>
+                          <tbody>
+                            <tr>
+                              <td>Yes</td>
+                              <td><input class="form-control" id="" type="radio"></td>
+                              <td>No</td>
+                              <td><input class="form-control" id="" type="radio"></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                      <td><input class="form-control" id="" type="text"></td>
+                    </tr>
+                    <tr>
+                      <td>Tab Primaquin 15 mg</td>
+                      <td>Tab</td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td>
+                        <table>
+                          <tbody>
+                            <tr>
+                              <td>Yes</td>
+                              <td><input class="form-control" id="" type="radio"></td>
+                              <td>No</td>
+                              <td><input class="form-control" id="" type="radio"></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                      <td><input class="form-control" id="" type="text"></td>
+                    </tr>
+                    <tr>
+                      <td>Tab. Quinine Sulphate 300mg</td>
+                      <td>Tab</td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td>
+                        <table>
+                          <tbody>
+                            <tr>
+                              <td>Yes</td>
+                              <td><input class="form-control" id="" type="radio"></td>
+                              <td>No</td>
+                              <td><input class="form-control" id="" type="radio"></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                      <td><input class="form-control" id="" type="text"></td>
+                    </tr>
+                    <tr>
+                      <td>Inj. Quinine</td>
+                      <td>Inj</td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td>
+                        <table>
+                          <tbody>
+                            <tr>
+                              <td>Yes</td>
+                              <td><input class="form-control" id="" type="radio"></td>
+                              <td>No</td>
+                              <td><input class="form-control" id="" type="radio"></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                      <td><input class="form-control" id="" type="text"></td>
+                    </tr>
+                    <tr>
+                      <td>DHA+PIP</td>
+                      <td></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td>
+                        <table>
+                          <tbody>
+                            <tr>
+                              <td>Yes</td>
+                              <td><input class="form-control" id="" type="radio"></td>
+                              <td>No</td>
+                              <td><input class="form-control" id="" type="radio"></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                      <td><input class="form-control" id="" type="text"></td>
+                    </tr>
+                    <tr>
+                      <td><input class="form-control zp" id="" type="text" placeholder="  Other drugs"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td>
+                        <table>
+                          <tbody>
+                            <tr>
+                              <td>Yes</td>
+                              <td><input class="form-control" id="" type="radio"></td>
+                              <td>No</td>
+                              <td><input class="form-control" id="" type="radio"></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                      <td><input class="form-control" id="" type="text"></td>
+                    </tr>
+                  </tbody>
+                </table>
+                <table class="table table-bordered table-striped  tbl-add-form table-hover mb0">
+                  <thead>
+                    <tr>
+                      <td colspan="12">VECTOR CONTROL <urduin>ویکٹر کنٹرول  (From Stock Register - اسٹا ک رجسٹر سے تعداد لکھیں)</urduin></td>
+                    </tr>
+                    <tr>
+                      <td rowspan="2">Items</td>
+                      <td rowspan="2">Unit</td>
+                      <td>A</td>
+                      <td>B</td>
+                      <td>C</td>
+                      <td>D</td>
+                      <td>E</td>
+                      <td>F</td>
+                      <td>G</td>
+                      <td>H</td>
+                      <td>I</td>
+                      <td rowspan="2">Comments</td>
+                    </tr>
+                    <tr>
+                      <td>Start Balance</td>
+                      <td>Received during Month</td>
+                      <td>Utilized / Dispensed</td>
+                      <td>Discarded / Wasted</td>
+                      <td>Total Expensed (E=C+D)</td>
+                      <td>Returned to District/SR</td>
+                      <td>Closing Balance G=(A+B)-(E+F)</td>
+                      <td># Days Out of Stock</td>
+                      <td>Out of stock for 7 continious working days (Yes/No)</td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>LLINs (ANC)</td>
+                      <td>Piece</td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td>
+                        <table>
+                          <tbody>
+                            <tr>
+                              <td>Yes</td>
+                              <td><input class="form-control" id="" type="radio"></td>
+                              <td>No</td>
+                              <td><input class="form-control" id="" type="radio"></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                      <td><input class="form-control" id="" type="text"></td>
+                    </tr>
+                    <tr>
+                      <td>LLINs (Mass)</td>
+                      <td>Piece</td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td>
+                        <table>
+                          <tbody>
+                            <tr>
+                              <td>Yes</td>
+                              <td><input class="form-control" id="" type="radio"></td>
+                              <td>No</td>
+                              <td><input class="form-control" id="" type="radio"></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                      <td><input class="form-control" id="" type="text"></td>
+                    </tr>
+                    <tr>
+                      <td>Deltamethrine Sachet</td>
+                      <td>Piece</td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td>
+                        <table>
+                          <tbody>
+                            <tr>
+                              <td>Yes</td>
+                              <td><input class="form-control" id="" type="radio"></td>
+                              <td>No</td>
+                              <td><input class="form-control" id="" type="radio"></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                      <td><input class="form-control" id="" type="text"></td>
+                    </tr>
+                    <tr>
+                      <td>IRS Pumps</td>
+                      <td>Piece</td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td>
+                        <table>
+                          <tbody>
+                            <tr>
+                              <td>Yes</td>
+                              <td><input class="form-control" id="" type="radio"></td>
+                              <td>No</td>
+                              <td><input class="form-control" id="" type="radio"></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                      <td><input class="form-control" id="" type="text"></td>
+                    </tr>
+                  </tbody>
+                </table>
+                <table class="table table-bordered table-striped  tbl-add-form table-hover mb0">
+                  <thead>
+                    <tr>
+                      <td colspan="12">RECORDING AND REPORTING TOOLS <urduin>ریکا رڈنگ اور رپورٹنگ کے فارم اور رجسٹر وغیرہ (From Stock Register - اسٹا ک رجسٹر سے تعداد لکھیں)</urduin></td>
+                    </tr>
+                    <tr>
+                      <td rowspan="2">Items</td>
+                      <td rowspan="2">Unit</td>
+                      <td>A</td>
+                      <td>B</td>
+                      <td>C</td>
+                      <td>D</td>
+                      <td>E</td>
+                      <td>F</td>
+                      <td>G</td>
+                      <td>H</td>
+                      <td>I</td>
+                      <td rowspan="2">Comments</td>
+                    </tr>
+                    <tr>
+                      <td>Start Balance</td>
+                      <td>Received during Month</td>
+                      <td>Utilized / Dispensed</td>
+                      <td>Discarded / Wasted</td>
+                      <td>Total Expensed (E=C+D)</td>
+                      <td>Returned to District/SR</td>
+                      <td>Closing Balance G=(A+B)-(E+F)</td>
+                      <td># Days Out of Stock</td>
+                      <td>Out of stock for 7 continious working days (Yes/No)</td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>FM-1 Register</td>
+                      <td>Piece</td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td>
+                        <table>
+                          <tbody>
+                            <tr>
+                              <td>Yes</td>
+                              <td><input class="form-control" id="" type="radio"></td>
+                              <td>No</td>
+                              <td><input class="form-control" id="" type="radio"></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                      <td><input class="form-control" id="" type="text"></td>
+                    </tr>
+                    <tr>
+                      <td>FM-2 Form Pads</td>
+                      <td>Piece</td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td>
+                        <table>
+                          <tbody>
+                            <tr>
+                              <td>Yes</td>
+                              <td><input class="form-control" id="" type="radio"></td>
+                              <td>No</td>
+                              <td><input class="form-control" id="" type="radio"></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                      <td><input class="form-control" id="" type="text"></td>
+                    </tr>
+                    <tr>
+                      <td>Facility Stock Register</td>
+                      <td>Piece</td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td>
+                        <table>
+                          <tbody>
+                            <tr>
+                              <td>Yes</td>
+                              <td><input class="form-control" id="" type="radio"></td>
+                              <td>No</td>
+                              <td><input class="form-control" id="" type="radio"></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                      <td><input class="form-control" id="" type="text"></td>
+                    </tr>
+                    <tr>
+                      <td>LLIN Vouchers</td>
+                      <td>Pad</td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td>
+                        <table>
+                          <tbody>
+                            <tr>
+                              <td>Yes</td>
+                              <td><input class="form-control" id="" type="radio"></td>
+                              <td>No</td>
+                              <td><input class="form-control" id="" type="radio"></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                      <td><input class="form-control" id="" type="text"></td>
+                    </tr>
+                    <tr>
+                      <td>LLINs (Inward &amp; Outward) Stock Register</td>
+                      <td>Piece</td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td>
+                        <table>
+                          <tbody>
+                            <tr>
+                              <td>Yes</td>
+                              <td><input class="form-control" id="" type="radio"></td>
+                              <td>No</td>
+                              <td><input class="form-control" id="" type="radio"></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                      <td><input class="form-control" id="" type="text"></td>
+                    </tr>
+                  </tbody>
+                </table>
+                <table class="table table-bordered table-striped  tbl-add-form table-hover mb0">
+                  <thead>
+                    <tr>
+                      <th colspan="5">2.5 Monitoring &amp; Supervision <urduin>ما نیٹرنگ اورسُپر وژن / نگرانی</urduin></th>
+                    </tr>
+                    <tr>
+                      <th>S.#</th>
+                      <th>Name of the Visiting Officer</th>
+                      <th>Designation</th>
+                      <th>Organization</th>
+                      <th>Date of Visit</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control dp" id="" type="text"></td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control dp" id="" type="text"></td>
+                    </tr>
+                    <tr>
+                      <td>3</td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control dp" id="" type="text"></td>
+                    </tr>
+                    <tr>
+                      <td>4</td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control dp" id="" type="text"></td>
+                    </tr>
+                    <tr>
+                      <td>5</td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control dp" id="" type="text"></td>
+                    </tr>
+                    <tr>
+                      <td>6</td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><input class="form-control dp" id="" type="text"></td>
+                    </tr>
+                  </tbody>
+                </table>
+                <table class="table table-bordered table-striped  tbl-add-form table-hover mb0">
+                  <thead>
+                    <tr>
+                      <th colspan="2">2.5 Comments (Including requirements) <urduin>تبصرے (سمیت ضروریات)</urduin></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Staff Present</td>
+                      <td><input class="form-control" id="" type="text"></td>
+                    </tr>
+                    <tr>
+                      <td>Staff Training</td>
+                      <td><input class="form-control" id="" type="text"></td>
+                    </tr>
+                    <tr>
+                      <td>Materials</td>
+                      <td><input class="form-control" id="" type="text"></td>
+                    </tr>
+                    <tr>
+                      <td>Equipment</td>
+                      <td><input class="form-control" id="" type="text"></td>
+                    </tr>
+                    <tr>
+                      <td>Others</td>
+                      <td><input class="form-control" id="" type="text"></td>
+                    </tr>
+                  </tbody>
+                </table>
+                <table class="table table-bordered table-striped  tbl-add-form table-hover mb0">
+                  <tbody>
+                    <tr>
+                      <td><label>Name (Facility Focal Person)</label></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><label>Designation</label></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                    </tr>
+                    <tr>
+                      <td><label>Name (Facility In-Charge)</label></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                      <td><label>Designation</label></td>
+                      <td><input class="form-control" id="" type="text"></td>
+                    </tr>
+                  </tbody>
+                </table>
+                <table class="table table-bordered">
+                      <tbody>
+                        <tr>
+                          <td colspan="4" class="text-right">
+                            <a href="#" class="btn btn-primary btn-md btn-add"><i class="fa fa-floppy-o"></i> Save</a>
+                            <a href="#" class="btn btn-primary btn-md btn-add"><i class="fa fa-repeat"></i> Rest</a>
+                            <a href="#" class="btn btn-primary btn-md btn-add"><i class="fa fa-times"></i> Cancel</a>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  
+              </div><!--end of card-body-->
+            </div><!--end of card-->
+          </div>
+           <!-- Page Content End Here -->
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="assets/js/jquery-3.4.1.min.js"></script>
+    <script src="assets/bootstrap/popper.min.js"></script>
+    <script src="assets/bootstrap/bootstrap.min.js"></script>
+    <!-- wysihtml -->
+    <script src="http://voog.github.io/wysihtml/bower_components/wysihtml/dist/minified/wysihtml.min.js"></script>
+    <script src="http://voog.github.io/wysihtml/bower_components/wysihtml/dist/minified/wysihtml.all-commands.min.js"></script> 
+    <script src="http://voog.github.io/wysihtml/bower_components/wysihtml/dist/minified/wysihtml.table_editing.min.js"></script> 
+    <script src="http://voog.github.io/wysihtml/bower_components/wysihtml/dist/minified/wysihtml.toolbar.min.js"></script>
+    <script src="http://voog.github.io/wysihtml/bower_components/wysihtml/parser_rules/advanced_and_extended.js"></script>
+    
+      <script type="text/javascript">
+       $(document).ready(function () {
+
+    $('#sidebarCollapse').on('click', function () {
+        $('#sidebar').toggleClass('active');
+        $('#content').toggleClass('active');
+    });
+           var editor = new wysihtml.Editor(document.getElementById('editor'), {
+    toolbar:document.getElementById('toolbar'),
+    parserRules:  wysihtmlParserRules
+  });
+
+});
+          
+          // Function For Tooltips
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+
+          
+        $(function() {
+            $(".li-tree").on("click", function(e) {
+                    $(".li-tree .sidebar-submenu").not(this).removeClass("show");
+                    $(this).toggleClass("show");
+                    e.stopPropagation()
+                });
+            $(document).on("click", function(e) {
+//                if ($(e.target).is("ul.responsive-side") === false) {
+//                    $(".li-tree.intro").removeClass("intro");
+////                    alert ('this is sidebar');
+//                  
+//                }
+//                else{
+//                     $('.li-tree.intro').addClass("");
+//                }
+            });
+        });
+</script>
+<script>
+    $('#body-row .collapse').collapse('hide'); 
+
+// Collapse/Expand icon
+$('#collapse-icon').addClass('fa-angle-double-left'); 
+
+// Collapse click
+$('[data-toggle=sidebar-colapse]').click(function() {
+    SidebarCollapse();
+});
+
+function SidebarCollapse () {
+    $('.menu-collapsed').toggleClass('d-none');
+    $('.sidebar-submenu').toggleClass('d-none');
+    $('.submenu-icon').toggleClass('d-none');
+    $('#sidebar-container').toggleClass('sidebar-expanded sidebar-collapsed');
+    
+    // Treating d-flex/d-none on separators with title
+    var SeparatorTitle = $('.sidebar-separator-title');
+    if ( SeparatorTitle.hasClass('d-flex') ) {
+        SeparatorTitle.removeClass('d-flex');
+    } else {
+        SeparatorTitle.addClass('d-flex');
+    }
+    
+    // Collapse/Expand icon
+    $('#collapse-icon').toggleClass('fa-angle-double-left fa-angle-double-right');
+}
+</script>
+ <script>
+
+     $(window).on('load', function(){
+      var win = $(this);
+      if (win.width() < 768) { 
+
+      $('#sidebar').addClass('active');
+           $('#content').addClass('active');
+
+      }
+    else
+    {
+        $('#sidebar').removeClass('active');
+        $('#content').removeClass('active');
+    }
+
+});
+          $(window).on('resize1', function(){
+     
+       if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+
+      $('#sidebar').addClass('active');
+           $('#content').addClass('active');
+
+      }
+    else
+    {
+        $('#sidebar').removeClass('active');
+        $('#content').removeClass('active');
+    }
+
+});
+     
+  if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+ // some code..
+      
+}
+</script>
+  </body>
+</html>

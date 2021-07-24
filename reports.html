@@ -1,0 +1,376 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="assets/fonts/fontawesome/css/all.css">
+    <!-- Fav Icon -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico" />
+    <!-- Styling -->
+    <link rel="stylesheet" href="assets/css/style.css">
+        
+    <title>Reports | Report Management System</title>
+  </head>
+  <body id="main-page" style="height: 1500px;">
+    
+    <div class="wrapper">
+        <!-- Sidebar  -->
+         <nav id="sidebar">
+            <div class="sidebar-header">
+                <img src="assets/images/logo-white.png" class="img-fluid" alt="">
+                <h3>Report Management System</h3>
+            </div>
+<!-- Bootstrap row -->
+<div class="row m-0" id="body-row">
+    <!-- Sidebar -->
+    <div id="sidebar-container" class="sidebar-expanded d-none d-md-block" style="width: 100%;">
+        <!-- d-* hiddens the Sidebar in smaller devices. Its itens can be kept on the Navbar 'Menu' -->
+        <!-- Bootstrap List Group -->
+        <ul class="list-group" id="accordion">
+            <!-- Menu with submenu -->
+           <li class="li-tree1">
+                <a href="#submenu1" data-toggle="collapse" aria-expanded="false" class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
+                <div class="d-flex w-100 justify-content-start align-items-center">
+                    <span class="fas fa-tachometer-alt fa-fw mr-3"></span>
+                    <span class="menu-collapsed">Dashboard</span>
+                    <span class="submenu-icon ml-auto"></span>
+                </div>
+            </a>
+            <!-- Submenu content -->
+            <div id='submenu1' class="collapse sidebar-submenu"  data-parent="#accordion">
+                <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                    <span class="menu-collapsed">Chahgag</span>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                    <span class="menu-collapsed">Reports</span>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                    <span class="menu-collapsed">Tables</span>
+                </a>
+                 <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                    <span class="menu-collapsed">Chahgag</span>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                    <span class="menu-collapsed">Reports</span>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                    <span class="menu-collapsed">Tables</span>
+                </a>
+                 <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                    <span class="menu-collapsed">Chahgag</span>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                    <span class="menu-collapsed">Reports</span>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                    <span class="menu-collapsed">Tables</span>
+                </a>
+            </div>
+           </li>
+            <li class="li-tree1">
+                <a href="#submenu2" data-toggle="collapse" aria-expanded="false" class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
+                    <div class="d-flex w-100 justify-content-start align-items-center">
+                        <span class="fa fa-user fa-fw mr-3"></span>
+                        <span class="menu-collapsed">Profile</span>
+                        <span class="submenu-icon ml-auto"></span>
+                    </div>
+                </a>
+                <!-- Submenu content -->
+                <div id='submenu2' class="collapse sidebar-submenu"  data-parent="#accordion">
+                        <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                            <span class="menu-collapsed">Settings</span>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                            <span class="menu-collapsed">Password</span>
+                        </a>
+                </div>
+            </li>
+           <li>
+                <a href="#" class="bg-dark list-group-item list-group-item-action">
+                <div class="d-flex w-100 justify-content-start align-items-center">
+                    <span class="fa fa-tasks fa-fw mr-3"></span>
+                    <span class="menu-collapsed">Tasks</span>
+                </div>
+            </a>
+           </li>
+        </ul><!-- List Group END-->
+    </div><!-- sidebar-container END -->
+    <!-- MAIN -->
+</div><!-- body-row END -->
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="btn">
+                        <i class="fas fa-align-left"></i>
+<!--                        <span>Toggle Sidebar</span>-->
+                    </button>
+                    <button class="btn d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#"><img src="assets/images/icon/contacts.svg" class="img-fluid" alt=""> Contact</a>
+                            </li>
+                           <li class="nav-item">
+                                <a class="nav-link" href="#"><img src="assets/images/icon/negative-vote.svg" class="img-fluid" alt=""> Feedback</a>
+                            </li>
+                           <li class="nav-item">
+                                <a class="nav-link" href="#"><img src="assets/images/icon/businessman.svg" class="img-fluid" alt=""> Manager</a>
+                            </li>
+                            <li class="nav-item" style="margin-left: 40px;" data-toggle="tooltip" title="Signout">
+                                <a class="nav-link" href="#"><img src="assets/images/icon/gear.svg" class="img-fluid" alt=""></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+           <!-- Page Content Start Here  -->
+            <div class="content-wraper p-2 borderd-rounded">
+                <div class="row m-0 report-filters">
+                    <div class="col-lg-12">
+                        <h4 style="text-align: center;">Social Protection Questionnaire</h4>
+                    </div>
+                    
+
+                    <form action="" class="row m-0" style="font-size: 13px;">
+                        <div class="col-lg-6">
+                            <div class="form-group row">
+                                <label for="" class="col-lg-4">Agency Name:</label>
+                                <input type="text" name="">
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-6">
+                            <div class="form-group row">
+                                <label for="" class="col-lg-4">Scheme Name</label>
+                                <input type="text" name="">
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="form-group row">
+                                <label for="" class="col-lg-4">Type of Scheme (Contributory/Others)</label>
+                                <input type="text" name="">
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="form-group row">
+                                <label for="" class="col-lg-4">Reporting Interval: Monthly / Quarterly</label>
+                                <input type="text" name="">
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="form-group row">
+                                <label for="" class="col-lg-4">Reporting Year – Month/Quarter</label>
+                                <input type="text" name="">
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="form-group row">
+                                <label for="" class="col-lg-4">Province: {Provincial Name}
+                                </label>
+                                <input type="text" name="">
+                            </div>
+                        </div>
+                    </form>
+                    
+                    <div class="row-table">
+                        <div class="col-lg-12 p-0">
+                        <table class="table table-bordered table-reports p-5">
+                            <thead>
+                                <tr>
+                                    <th>Facode</th>
+                                    <th>Facility</th>
+                                    <th>Union Council</th>
+                                    <th>Jan</th>
+                                    <th>Feb</th>
+                                    <th>Total Timeliness</th>
+                                    <th>Total Completeness</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>321224</td>
+                                    <td>Women &amp; Children Hospital Abbottabad</td>
+                                    <td>ATD Urban</td>
+                                    <td><img src="assets/images/icon/clock.svg" alt=""></td>
+                                    <td><img src="assets/images/icon/close.svg" alt=""></td>
+                                    <td>2/2=100%</td>
+                                    <td>2/2=100%</td>
+                                </tr>
+                                <tr>
+                                    <td>321224</td>
+                                    <td>Women &amp; Children Hospital Abbottabad</td>
+                                    <td>ATD Urban</td>
+                                    <td><img src="assets/images/icon/clock.svg" alt=""></td>
+                                    <td><img src="assets/images/icon/close.svg" alt=""></td>
+                                    <td>2/2=100%</td>
+                                    <td>2/2=100%</td>
+                                </tr>
+                                <tr>
+                                    <td>321224</td>
+                                    <td>Women &amp; Children Hospital Abbottabad</td>
+                                    <td>ATD Urban</td>
+                                    <td><img src="assets/images/icon/clock.svg" alt=""></td>
+                                    <td><img src="assets/images/icon/close.svg" alt=""></td>
+                                    <td>2/2=100%</td>
+                                    <td>2/2=100%</td>
+                                </tr>
+                                <tr>
+                                    <td>321224</td>
+                                    <td>Women &amp; Children Hospital Abbottabad</td>
+                                    <td>ATD Urban</td>
+                                    <td><img src="assets/images/icon/clock.svg" alt=""></td>
+                                    <td><img src="assets/images/icon/close.svg" alt=""></td>
+                                    <td>2/2=100%</td>
+                                    <td>2/2=100%</td>
+                                </tr>
+                                <tr>
+                                    <td>321224</td>
+                                    <td>Women &amp; Children Hospital Abbottabad</td>
+                                    <td>ATD Urban</td>
+                                    <td><img src="assets/images/icon/clock.svg" alt=""></td>
+                                    <td><img src="assets/images/icon/close.svg" alt=""></td>
+                                    <td>2/2=100%</td>
+                                    <td>2/2=100%</td>
+                                </tr>
+                                <tr>
+                                    <td>321224</td>
+                                    <td>Women &amp; Children Hospital Abbottabad</td>
+                                    <td>ATD Urban</td>
+                                    <td><img src="assets/images/icon/clock.svg" alt=""></td>
+                                    <td><img src="assets/images/icon/close.svg" alt=""></td>
+                                    <td>2/2=100%</td>
+                                    <td>2/2=100%</td>
+                                </tr>
+                                <tr>
+                                    <td>321224</td>
+                                    <td>Women &amp; Children Hospital Abbottabad</td>
+                                    <td>ATD Urban</td>
+                                    <td><img src="assets/images/icon/clock.svg" alt=""></td>
+                                    <td><img src="assets/images/icon/close.svg" alt=""></td>
+                                    <td>2/2=100%</td>
+                                    <td>2/2=100%</td>
+                                </tr>
+                                <tr>
+                                    <td>321224</td>
+                                    <td>Women &amp; Children Hospital Abbottabad</td>
+                                    <td>ATD Urban</td>
+                                    <td><img src="assets/images/icon/clock.svg" alt=""></td>
+                                    <td><img src="assets/images/icon/close.svg" alt=""></td>
+                                    <td>2/2=100%</td>
+                                    <td>2/2=100%</td>
+                                </tr>
+                                <tr>
+                                    <td>321224</td>
+                                    <td>Women &amp; Children Hospital Abbottabad</td>
+                                    <td>ATD Urban</td>
+                                    <td><img src="assets/images/icon/clock.svg" alt=""></td>
+                                    <td><img src="assets/images/icon/close.svg" alt=""></td>
+                                    <td>2/2=100%</td>
+                                    <td>2/2=100%</td>
+                                </tr>
+                                <tr>
+                                    <td>321224</td>
+                                    <td>Women &amp; Children Hospital Abbottabad</td>
+                                    <td>ATD Urban</td>
+                                    <td><img src="assets/images/icon/clock.svg" alt=""></td>
+                                    <td><img src="assets/images/icon/close.svg" alt=""></td>
+                                    <td>2/2=100%</td>
+                                    <td>2/2=100%</td>
+                                </tr>
+                                <tr>
+                                    <td>321224</td>
+                                    <td>Women &amp; Children Hospital Abbottabad</td>
+                                    <td>ATD Urban</td>
+                                    <td><img src="assets/images/icon/clock.svg" alt=""></td>
+                                    <td><img src="assets/images/icon/close.svg" alt=""></td>
+                                    <td>2/2=100%</td>
+                                    <td>2/2=100%</td>
+                                </tr>
+                                <tr>
+                                    <td>321224</td>
+                                    <td>Women &amp; Children Hospital Abbottabad</td>
+                                    <td>ATD Urban</td>
+                                    <td><img src="assets/images/icon/clock.svg" alt=""></td>
+                                    <td><img src="assets/images/icon/close.svg" alt=""></td>
+                                    <td>2/2=100%</td>
+                                    <td>2/2=100%</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    </div>
+
+                </div>
+            </div>
+           <!-- Page Content End Here -->
+        </div>
+        <div id="export-btn">
+            <ul>
+                <li class="excel" data-toggle="tooltip" title="Export Excel Format"><i class="far fa-file-excel"></i></li>
+                <li class="pdf" data-toggle="tooltip" title="Export PDF Format"><i class="far fa-file-pdf"></i></li>
+                <li class="word" data-toggle="tooltip" title="Export Word Format"><i class="far fa-file-word"></i></li>
+            </ul>
+        </div>
+    </div>
+
+  
+  
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="assets/js/jquery-3.4.1.min.js"></script>
+    <script src="assets/bootstrap/popper.min.js"></script>
+    <script src="assets/bootstrap/bootstrap.min.js"></script>
+    <!-- wysihtml -->
+    <script src="http://voog.github.io/wysihtml/bower_components/wysihtml/dist/minified/wysihtml.min.js"></script>
+    <script src="http://voog.github.io/wysihtml/bower_components/wysihtml/dist/minified/wysihtml.all-commands.min.js"></script> 
+    <script src="http://voog.github.io/wysihtml/bower_components/wysihtml/dist/minified/wysihtml.table_editing.min.js"></script> 
+    <script src="http://voog.github.io/wysihtml/bower_components/wysihtml/dist/minified/wysihtml.toolbar.min.js"></script>
+    <script src="http://voog.github.io/wysihtml/bower_components/wysihtml/parser_rules/advanced_and_extended.js"></script>
+    
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+            $('#sidebar').toggleClass('active');
+            $('#content').toggleClass('active');
+        });
+        var editor = new wysihtml.Editor(document.getElementById('editor'), {
+        toolbar:document.getElementById('toolbar'),
+        parserRules:  wysihtmlParserRules
+        });
+
+            });
+
+        //
+        $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+
+ <script>
+    $(window).scroll(function() {    
+var scroll = $(window).scrollTop();
+ //console.log(scroll);
+if (scroll >= 50) {
+    //console.log('a');
+    $(".report-filters").css("top", "5px");
+} else {
+    //console.log('a');
+     $(".report-filters").css("top", "63px");
+}
+         });
+</script>
+  </body>
+</html>

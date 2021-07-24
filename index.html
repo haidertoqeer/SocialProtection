@@ -1,0 +1,514 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="assets/fonts/fontawesome/css/all.css">
+    <!-- Fav Icon -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico" />
+    <!-- Styling -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- For High Charts-->
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+    <title>Dashboard | Report Management System</title>
+  </head>
+  <body id="main-page">
+    
+    <div class="wrapper">
+        <!-- Sidebar  -->
+         <nav id="sidebar">
+            <div class="sidebar-header">
+                <img src="assets/images/logo-white.png" class="img-fluid" alt="">
+                <h3>Report Management System</h3>
+            </div>
+
+            <!-- Bootstrap row -->
+<div class="row m-0" id="body-row">
+    <!-- Sidebar -->
+    <div id="sidebar-container" class="sidebar-expanded d-none d-md-block" style="width: 100%;">
+        <!-- d-* hiddens the Sidebar in smaller devices. Its itens can be kept on the Navbar 'Menu' -->
+        <!-- Bootstrap List Group -->
+        <ul class="list-group" id="accordion">
+            <!-- Menu with submenu -->
+           <li class="li-tree1">
+                <a href="#submenu1" data-toggle="collapse" aria-expanded="false" class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
+                <div class="d-flex w-100 justify-content-start align-items-center">
+                    <span class="fas fa-tachometer-alt fa-fw mr-3"></span>
+                    <span class="menu-collapsed">Dashboard</span>
+                    <span class="submenu-icon ml-auto"></span>
+                </div>
+            </a>
+            <!-- Submenu content -->
+            <div id='submenu1' class="collapse sidebar-submenu"  data-parent="#accordion">
+                <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                    <span class="menu-collapsed">Chahgag</span>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                    <span class="menu-collapsed">Reports</span>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                    <span class="menu-collapsed">Tables</span>
+                </a>
+                 <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                    <span class="menu-collapsed">Chahgag</span>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                    <span class="menu-collapsed">Reports</span>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                    <span class="menu-collapsed">Tables</span>
+                </a>
+                 <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                    <span class="menu-collapsed">Chahgag</span>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                    <span class="menu-collapsed">Reports</span>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                    <span class="menu-collapsed">Tables</span>
+                </a>
+            </div>
+           </li>
+            <li class="li-tree1">
+                <a href="#submenu2" data-toggle="collapse" aria-expanded="false" class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
+                    <div class="d-flex w-100 justify-content-start align-items-center">
+                        <span class="fa fa-user fa-fw mr-3"></span>
+                        <span class="menu-collapsed">Profile</span>
+                        <span class="submenu-icon ml-auto"></span>
+                    </div>
+                </a>
+                <!-- Submenu content -->
+                <div id='submenu2' class="collapse sidebar-submenu"  data-parent="#accordion">
+                        <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                            <span class="menu-collapsed">Settings</span>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                            <span class="menu-collapsed">Password</span>
+                        </a>
+                </div>
+            </li>
+           <li>
+                <a href="#" class="bg-dark list-group-item list-group-item-action">
+                <div class="d-flex w-100 justify-content-start align-items-center">
+                    <span class="fa fa-tasks fa-fw mr-3"></span>
+                    <span class="menu-collapsed">Tasks</span>
+                </div>
+            </a>
+           </li>
+        </ul><!-- List Group END-->
+    </div><!-- sidebar-container END -->
+    <!-- MAIN -->
+</div><!-- body-row END -->
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="btn">
+                        <i class="fas fa-align-left"></i>
+<!--                        <span>Toggle Sidebar</span>-->
+                    </button>
+                    <button class="btn d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#"><img src="assets/images/icon/contacts.svg" class="img-fluid" alt=""> Contact</a>
+                            </li>
+                           <li class="nav-item">
+                                <a class="nav-link" href="#"><img src="assets/images/icon/negative-vote.svg" class="img-fluid" alt=""> Feedback</a>
+                            </li>
+                           <li class="nav-item">
+                                <a class="nav-link" href="#"><img src="assets/images/icon/businessman.svg" class="img-fluid" alt=""> Manager</a>
+                            </li>
+                            <li class="nav-item"style="margin-left: 40px;" data-toggle="tooltip" title="Signout">
+                                <a class="nav-link" href="#"><img src="assets/images/icon/gear.svg" class="img-fluid" alt=""></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="content-wraper">
+                <div class="row m-0">
+                    <div class="col-lg-4">
+                        <div id="container" class="charts-div" style="height: 280px;"></div>
+                    </div>
+                    <div class="col-lg-8 custom-cards">
+                        <div class="row m-0 mt-2">
+                            <div class="col-lg-3 bg-1 p-0 custom-box">
+                                <div class="inner-div">
+                                    <span class="inline-display">
+                                        Lorem et ipsum
+                                    </span>
+                                    <span class="main-fig">
+                                        241
+                                    </span>
+                                    <div class="arrow-div text-center cust-bg">
+                                      <i class="fas fa-arrow-up"></i> <span>3</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 bg-2 p-0 custom-box">
+                                <div class="inner-div">
+                                    <span class="inline-display">
+                                        Lorem et ipsum
+                                    </span>
+                                    <span class="main-fig">
+                                        241
+                                    </span>
+                                    <div class="arrow-div text-center cust-bg">
+                                      <i class="fas fa-arrow-up"></i> <span>3</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 bg-3 p-0 custom-box">
+                                <div class="inner-div">
+                                    <span class="inline-display">
+                                        Lorem et ipsum
+                                    </span>
+                                    <span class="main-fig">
+                                        241
+                                    </span>
+                                    <div class="arrow-div text-center cust-bg">
+                                      <i class="fas fa-arrow-up"></i> <span>3</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 bg-4 p-0 custom-box">
+                                <div class="inner-div">
+                                    <span class="inline-display">
+                                        Lorem et ipsum
+                                    </span>
+                                    <span class="main-fig">
+                                        241
+                                    </span>
+                                    <div class="arrow-div text-center cust-bg">
+                                      <i class="fas fa-arrow-up"></i> <span>3</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row m-0 mt-2">
+                            <div class="col-lg-3 bg-1 p-0 custom-box">
+                                <div class="inner-div">
+                                    <span class="inline-display">
+                                        Lorem et ipsum
+                                    </span>
+                                    <span class="main-fig">
+                                        241
+                                    </span>
+                                    <div class="arrow-div text-center cust-bg">
+                                      <i class="fas fa-arrow-up"></i> <span>3</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 bg-2 p-0 custom-box">
+                                <div class="inner-div">
+                                    <span class="inline-display">
+                                        Lorem et ipsum
+                                    </span>
+                                    <span class="main-fig">
+                                        241
+                                    </span>
+                                    <div class="arrow-div text-center cust-bg">
+                                      <i class="fas fa-arrow-up"></i> <span>3</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 bg-3 p-0 custom-box">
+                                <div class="inner-div">
+                                    <span class="inline-display">
+                                        Lorem et ipsum
+                                    </span>
+                                    <span class="main-fig">
+                                        241
+                                    </span>
+                                    <div class="arrow-div text-center cust-bg">
+                                      <i class="fas fa-arrow-up"></i> <span>3</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 bg-4 p-0 custom-box">
+                                <div class="inner-div">
+                                    <span class="inline-display">
+                                        Lorem et ipsum
+                                    </span>
+                                    <span class="main-fig">
+                                        241
+                                    </span>
+                                    <div class="arrow-div text-center cust-bg">
+                                      <i class="fas fa-arrow-up"></i> <span>3</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row m-0">
+                    <div class="col-lg-4">
+                        <div id="container2" class="charts-div" style="height: 280px;"></div>
+                    </div>
+                     <div class="col-lg-4">
+                      <div class="row">
+                          <div class="col-lg-12">
+                              <div id="container21" class="charts-div" style="height: 140px;"></div>
+                          </div>
+                          <div class="col-lg-12">
+                              <div id="container22" class="charts-div" style="height: 140px;"></div>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div id="container31" class="charts-div" style="height: 280px;"></div>
+                    </div>
+                </div>
+            </div>
+
+            
+        </div>
+    </div>
+
+  
+  
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="assets/js/jquery-3.4.1.min.js"></script>
+    <script src="assets/bootstrap/popper.min.js"></script>
+    <script src="assets/bootstrap/bootstrap.min.js"></script>
+      <script type="text/javascript">
+       $(document).ready(function () {
+
+    $('#sidebarCollapse').on('click', function () {
+        $('#sidebar').toggleClass('active');
+        $('#content').toggleClass('active');
+    });
+
+});
+    </script>
+    <script>
+        Highcharts.chart('container', {
+    chart: {
+        type: 'column'
+    },
+    title: {
+        text: 'Stacked column chart'
+    },
+    xAxis: {
+        categories: ['Apples', 'Oranges', 'Pears', 'Grapes', 'Bananas']
+    },
+    yAxis: {
+        min: 0,
+        title: {
+            text: 'Total fruit consumption'
+        }
+    },            
+    tooltip: {
+        pointFormat: '<span style="color:{series.color}">{series.name}</span>: <b>{point.y}</b> ({point.percentage:.0f}%)<br/>',
+        shared: true
+    },
+    plotOptions: {
+        column: {
+            stacking: 'percent'
+        }
+    },
+    series: [{
+        name: 'John',
+        data: [5, 3, 4, 7, 2],
+        color: '#FBB931'
+    }, {
+        name: 'Jane',
+        data: [2, 2, 3, 2, 1],
+        color: '#92AA2E'
+    }, {
+        name: 'Joe',
+        data: [3, 4, 4, 2, 5],
+        color: '#358DD2'
+    }]
+});  
+      </script>
+      <script>
+        Highcharts.chart('container2', {
+    chart: {
+        type: 'bar'
+    },
+    title: {
+        text: 'Stacked bar chart'
+    },
+    xAxis: {
+        categories: ['Apples', 'Oranges', 'Pears', 'Grapes', 'Bananas']
+    },
+    yAxis: {
+        min: 0,
+        title: {
+            text: 'Total fruit consumption'
+        }
+    },
+    legend: {
+        reversed: true
+    },
+    plotOptions: {
+        series: {
+            stacking: 'normal'
+        }
+    },
+    series: [{
+        name: 'John',
+        data: [5, 3, 4, 7, 2],
+        color: '#FBB931'
+    }, {
+        name: 'Jane',
+        data: [2, 2, 3, 2, 1],
+        color: '#92AA2E' 
+    }, {
+        name: 'Joe',
+        data: [3, 4, 4, 2, 5],
+        color: '#358DD2'
+    }]
+});
+      </script>
+      <script>
+        Highcharts.chart('container21', {
+
+    title: false,
+            legend: false,
+
+    xAxis: {
+        tickInterval: 1,
+        type: 'logarithmic',
+        accessibility: {
+            rangeDescription: 'Range: 1 to 10'
+        }
+    },
+
+    yAxis: {
+        type: 'logarithmic',
+        minorTickInterval: 0.1,
+        accessibility: {
+            rangeDescription: 'Range: 0.1 to 1000'
+        }
+    },
+
+    tooltip: {
+        headerFormat: '<b>{series.name}</b><br />',
+        pointFormat: 'x = {point.x}, y = {point.y}'
+    },
+
+    series: [{
+        data: [1, 2, 4, 8, 16, 32, 64, 128, 256, 512],
+        pointStart: 1
+    }]
+});
+      </script>
+      <script>
+          Highcharts.chart('container22', {
+    chart: {
+        type: 'column'
+    },
+    title: false,
+              legend: false,
+    xAxis: {
+        categories: ['Apples', 'Oranges', 'Pears', 'Grapes', 'Bananas']
+    },
+    yAxis: {
+        min: 0,
+        title: {
+            text: 'Total fruit consumption'
+        }
+    },            
+    tooltip: {
+        pointFormat: '<span style="color:{series.color}">{series.name}</span>: <b>{point.y}</b> ({point.percentage:.0f}%)<br/>',
+        shared: true
+    },
+    plotOptions: {
+        column: {
+            stacking: 'percent'
+        }
+    },
+    series: [{
+        name: 'John',
+        data: [5, 3, 4, 7, 2],
+        color: '#FBB931'
+    }, {
+        name: 'Jane',
+        data: [2, 2, 3, 2, 1],
+        color: '#92AA2E'
+    }, {
+        name: 'Joe',
+        data: [3, 4, 4, 2, 5],
+        color: '#358DD2'
+    }]
+});  
+      </script>
+      <script>
+      Highcharts.chart('container31', {
+
+    chart: {
+        type: 'column'
+    },
+
+    title: {
+        text: 'Total fruit consumtion, grouped by gender'
+    },
+
+    xAxis: {
+        categories: ['Apples', 'Oranges', 'Pears', 'Grapes', 'Bananas']
+    },
+
+    yAxis: {
+        allowDecimals: false,
+        min: 0,
+        title: {
+            text: 'Number of fruits'
+        }
+    },
+
+    tooltip: {
+        formatter: function () {
+            return '<b>' + this.x + '</b><br/>' +
+                this.series.name + ': ' + this.y + '<br/>' +
+                'Total: ' + this.point.stackTotal;
+        }
+    },
+
+    plotOptions: {
+        column: {
+            stacking: 'normal'
+        }
+    },
+
+    series: [{
+        name: 'John',
+        data: [5, 3, 4, 7, 2],
+        stack: 'male'
+    }, {
+        name: 'Joe',
+        data: [3, 4, 4, 2, 5],
+        stack: 'male'
+    }, {
+        name: 'Jane',
+        data: [2, 5, 6, 2, 1],
+        stack: 'female'
+    }, {
+        name: 'Janet',
+        data: [3, 0, 4, 4, 3],
+        stack: 'female'
+    }]
+});
+      </script>
+      
+  </body>
+</html>

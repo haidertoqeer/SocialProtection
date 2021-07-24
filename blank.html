@@ -1,0 +1,2044 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="assets/fonts/fontawesome/css/all.css">
+    <!-- Fav Icon -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico" />
+    <!-- Styling -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="assets/css/expenditure.css" rel="stylesheet">
+    <link href="assets/css/bootstrap-datepicker.min.css" rel="stylesheet">
+    <link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet" /> 
+
+        
+    <title>Blank | Report Management System</title>
+    <!--[if IE]>
+	<link rel="stylesheet" type="text/css" href="all-ie-only.css" />
+<![endif]-->
+    <!--[if lt IE 9]> -->
+
+<!-- <![endif]-->
+  </head>
+  <body id="main-page">
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <img src="assets/images/logo-white.png" class="img-fluid" alt="">
+                <h3>Report Management System</h3>
+            </div>
+
+            <!-- Bootstrap row -->
+            <div class="row m-0" id="body-row">
+                <!-- Sidebar -->
+                <div id="sidebar-container" class="sidebar-expanded d-md-block" style="width: 100%;">
+                    <!-- d-* hiddens the Sidebar in smaller devices. Its itens can be kept on the Navbar 'Menu' -->
+                    <!-- Bootstrap List Group -->
+                    <ul class="list-group" id="accordion">
+                        <!-- Menu with submenu -->
+                       <li class="li-tree1">
+                            <a href="#submenu1" data-toggle="collapse" aria-expanded="false" class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
+                            <div class="d-flex w-100 justify-content-start align-items-center">
+                                <span class="fas fa-tachometer-alt fa-fw mr-3"></span>
+                                <span class="menu-collapsed">Dashboard</span>
+                                <span class="submenu-icon ml-auto"></span>
+                            </div>
+                        </a>
+                        <!-- Submenu content -->
+                        <div id='submenu1' class="collapse sidebar-submenu"  data-parent="#accordion">
+                            <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                                <span class="menu-collapsed">Chahgag</span>
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                                <span class="menu-collapsed">Reports</span>
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                                <span class="menu-collapsed">Tables</span>
+                            </a>
+                             <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                                <span class="menu-collapsed">Chahgag</span>
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                                <span class="menu-collapsed">Reports</span>
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                                <span class="menu-collapsed">Tables</span>
+                            </a>
+                             <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                                <span class="menu-collapsed">Chahgag</span>
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                                <span class="menu-collapsed">Reports</span>
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                                <span class="menu-collapsed">Tables</span>
+                            </a>
+                        </div>
+                       </li>
+                        <li class="li-tree1">
+                            <a href="#submenu2" data-toggle="collapse" aria-expanded="false" class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
+                                <div class="d-flex w-100 justify-content-start align-items-center">
+                                    <span class="fa fa-user fa-fw mr-3"></span>
+                                    <span class="menu-collapsed">Profile</span>
+                                    <span class="submenu-icon ml-auto"></span>
+                                </div>
+                            </a>
+                            <!-- Submenu content -->
+                            <div id='submenu2' class="collapse sidebar-submenu"  data-parent="#accordion">
+                                <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                                    <span class="menu-collapsed">Settings</span>
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                                    <span class="menu-collapsed">Password</span>
+                                </a>
+                            </div>
+                        </li>
+                       <li class="li-tree1">
+                            <a href="#" class="bg-dark list-group-item list-group-item-action">
+                                <div class="d-flex w-100 justify-content-start align-items-center">
+                                    <span class="fa fa-tasks fa-fw mr-3"></span>
+                                    <span class="menu-collapsed">Tasks</span>
+                                </div>
+                            </a>
+                       </li>
+                    </ul><!-- List Group END-->
+                </div><!-- sidebar-container END -->
+                <!-- MAIN -->
+            </div><!-- body-row END -->
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="btn">
+                        <i class="fas fa-align-left"></i>
+<!--                        <span>Toggle Sidebar</span>-->
+                    </button>
+                    <button class="btn d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" onclick="SidebarCollapse ()">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#"><img src="assets/images/icon/contacts.svg" class="img-fluid" alt=""> Contact</a>
+                            </li>
+                           <li class="nav-item">
+                                <a class="nav-link" href="#"><img src="assets/images/icon/negative-vote.svg" class="img-fluid" alt=""> Feedback</a>
+                            </li>
+                           <li class="nav-item">
+                                <a class="nav-link" href="#"><img src="assets/images/icon/businessman.svg" class="img-fluid" alt=""> Manager</a>
+                            </li>
+                            <li class="nav-item" style="margin-left: 40px;" data-toggle="tooltip" title="Signout"  id="logout" >
+                                <a class="nav-link" href="javascript:void(0)"><img src="assets/images/icon/gear.svg" class="img-fluid" alt=""></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+           <!-- Page Content Start Here  -->
+                <section id="main-content">
+        <section class="wrapper">
+        
+          <!--breadcrumbs ends -->
+          
+          <div class="row">
+            <div class="col-md-12">
+              <div class="card">
+                <div class="card-body mt2">
+                    <div class="row">
+                      <div class="col-sm-12">
+                        <table class="table tbl-listing-fliters mb5">
+                          <thead>
+                            <h4 style="text-align: center;">Social Protection Questionnaire</h4>
+                          </thead>
+                        </table>
+
+
+                        <table class="table table-bordered table-condensed tbl-add-filters">
+                          <tbody>
+                            
+
+                            <tr>
+
+
+                              <th>Social Protection Agency Name:</th>
+                              <td><input class="form-control" id="" type="text" ></td>
+                            
+                              <th>Scheme Name</th>
+                              <td><input class="form-control" id="" type="text" ></td>
+                            </tr>
+                            <tr>
+
+
+                              <th>Type of Scheme:</span></th>
+                              <td><input class="form-control" id="" type="text" ></td>
+                            
+                              <th>Reporting Interval: Monthly / Quarterly</th>
+                              <td><input class="form-control" id="" type="text" ></td>
+                            </tr>
+
+                            <tr>
+
+                              <th>Reporting Year – Month/Quarter</th>
+                              <td><input class="form-control" id="" type="text" ></td>
+                            
+                              <th>Province: {Provincial Name}</th>
+                              <td><input class="form-control" id="" type="text" ></td>
+                            </tr>
+                        </tbody>
+                      </table>
+
+                      <table class="table table-bordered table-condensed tbl-add-filters">
+                          <tbody>
+                            <tr>
+
+                              <th>Is agency providing  pension benefits</th>
+                              <td><input type="radio" name="optradio" checked>Yes</td>
+                              <td><input type="radio" name="optradio" checked>No</td>
+                            </tr>
+                        </tbody>
+                      </table>
+
+                      
+                        <table id="pruebatabla" class="table table-bordered table-condensed  fht-table" style="margin-top:-16px; width:1086px">
+                          
+                         
+                          
+                        </table>
+                        
+                          
+                      
+                       <main class="main">
+                        <div class="tables_of_expenditures">
+                         <table id="pruebatabla" class="table table-bordered table-condensed  fht-table" style="width: 100%;">
+              
+                        <tbody>
+
+                          <td colspan="4"></td>
+                          <td>Male</td>
+                          <td>Female</td>
+                          <td>Total</td>
+                        </tr>
+                            
+                            <tr>
+                              <td rowspan="6" class="celda_normal_table">1.1</td>
+                              <td rowspan="6" class="celda_normal_table">Number of people receiving old age pension  (on the event of retirement)</td>
+                              <td rowspan="3" class="celda_normal_table">Beneficiaries</td>
+                              <td class="celda_normal_table">Rural</td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                            </tr>
+                            <tr>
+                              <td class="celda_normal_table">Urban</td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              
+                            </tr>
+                            <tr>
+                              <td class="celda_normal_table">Total</td>
+                              <th class="celda_normal_table">1000</th>
+                              <th class="celda_normal_table">2000</th>
+                              <th class="celda_normal_table">3000</th>
+                            </tr>
+                            <td rowspan="3" class="celda_normal_table">Incentive (PKR)</td>
+                            <td class="celda_normal_table">Rural</td>
+                            <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                            <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                            <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                          </tr>
+                          <tr>
+                            <td class="celda_normal_table">Urban</td>
+                            <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                            <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                            <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                          </tr>
+                          <tr>
+                            <td class="celda_normal_table">Total</td>
+                            <th class="celda_normal_table">1000</th>
+                            <th class="celda_normal_table">2000</th>
+                            <th class="celda_normal_table">3000</th>
+                          </tr>
+
+
+                            <tr>
+                              <td rowspan="6" class="celda_normal_table">1.2</td>
+                              <td rowspan="6" class="celda_normal_table">Number of people receiving invalidity pension (In case of permanent disability)</td>
+                              <td rowspan="3" class="celda_normal_table">Beneficiaries</td>
+                              <td class="celda_normal_table">Rural</td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                            </tr>
+                            <tr>
+                              <td class="celda_normal_table">Urban</td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              
+                            </tr>
+                            <tr>
+                              <td class="celda_normal_table">Total</td>
+                              <th class="celda_normal_table">1000</th>
+                              <th class="celda_normal_table">2000</th>
+                              <th class="celda_normal_table">3000</th>
+                            </tr>
+                            <td rowspan="3" class="celda_normal_table">Incentive (PKR)</td>
+                            <td class="celda_normal_table">Rural</td>
+                            <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                            <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                            <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                          </tr>
+                          <tr>
+                            <td class="celda_normal_table">Urban</td>
+                            <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                            <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                            <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                          </tr>
+                          <tr>
+                            <td class="celda_normal_table">Total</td>
+                            <th class="celda_normal_table">1000</th>
+                            <th class="celda_normal_table">2000</th>
+                            <th class="celda_normal_table">3000</th>
+                          </tr>
+
+                          <tr>
+                              <td rowspan="6" class="celda_normal_table">1.3</td>
+                              <td rowspan="6" class="celda_normal_table">Number of people  receiving Old-Age Grant (an insured person attained superannuation age, but does not possess the minimum threshold for pension)</td>
+                              <td rowspan="3" class="celda_normal_table">Beneficiaries</td>
+                              <td class="celda_normal_table">Rural</td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                            </tr>
+                            <tr>
+                              <td class="celda_normal_table">Urban</td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              
+                            </tr>
+                            <tr>
+                              <td class="celda_normal_table">Total</td>
+                              <th class="celda_normal_table">1000</th>
+                              <th class="celda_normal_table">2000</th>
+                              <th class="celda_normal_table">3000</th>
+                            </tr>
+                            <td rowspan="3" class="celda_normal_table">Incentive (PKR)</td>
+                            <td class="celda_normal_table">Rural</td>
+                            <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                            <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                            <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                          </tr>
+                          <tr>
+                            <td class="celda_normal_table">Urban</td>
+                            <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                            <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                            <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                          </tr>
+                          <tr>
+                            <td class="celda_normal_table">Total</td>
+                            <th class="celda_normal_table">1000</th>
+                            <th class="celda_normal_table">2000</th>
+                            <th class="celda_normal_table">3000</th>
+                          </tr>
+
+                          <tr>
+                              <td rowspan="6" class="celda_normal_table">1.4</td>
+                              <td rowspan="6" class="celda_normal_table">Number of people  receiving Survivor's/family Pension (in case an insured Person is expired)</td>
+                              <td rowspan="3" class="celda_normal_table">Beneficiaries</td>
+                              <td class="celda_normal_table">Rural</td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                            </tr>
+                            <tr>
+                              <td class="celda_normal_table">Urban</td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              
+                            </tr>
+                            <tr>
+                              <td class="celda_normal_table">Total</td>
+                              <th class="celda_normal_table">1000</th>
+                              <th class="celda_normal_table">2000</th>
+                              <th class="celda_normal_table">3000</th>
+                            </tr>
+                            <td rowspan="3" class="celda_normal_table">Incentive (PKR)</td>
+                            <td class="celda_normal_table">Rural</td>
+                            <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                            <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                            <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                          </tr>
+                          <tr>
+                            <td class="celda_normal_table">Urban</td>
+                            <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                            <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                            <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                          </tr>
+                          <tr>
+                            <td class="celda_normal_table">Total</td>
+                            <th class="celda_normal_table">1000</th>
+                            <th class="celda_normal_table">2000</th>
+                            <th class="celda_normal_table">3000</th>
+                          </tr>
+
+                          <tr>
+                              <td rowspan="6" class="celda_normal_table">1.5</td>
+                              <td rowspan="6" class="celda_normal_table">Number of people  receiving early retirement pension</td>
+                              <td rowspan="3" class="celda_normal_table">Beneficiaries</td>
+                              <td class="celda_normal_table">Rural</td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                            </tr>
+                            <tr>
+                              <td class="celda_normal_table">Urban</td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              
+                            </tr>
+                            <tr>
+                              <td class="celda_normal_table">Total</td>
+                              <th class="celda_normal_table">1000</th>
+                              <th class="celda_normal_table">2000</th>
+                              <th class="celda_normal_table">3000</th>
+                            </tr>
+                            <td rowspan="3" class="celda_normal_table">Incentive (PKR)</td>
+                            <td class="celda_normal_table">Rural</td>
+                            <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                            <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                            <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                          </tr>
+                          <tr>
+                            <td class="celda_normal_table">Urban</td>
+                            <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                            <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                            <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                          </tr>
+                          <tr>
+                            <td class="celda_normal_table">Total</td>
+                            <th class="celda_normal_table">1000</th>
+                            <th class="celda_normal_table">2000</th>
+                            <th class="celda_normal_table">3000</th>
+                          </tr>
+
+                          <tr>
+                              <td rowspan="6" class="celda_normal_table">1.6</td>
+                              <td rowspan="6" class="celda_normal_table">Number of active contributors to a pension scheme</td>
+                              <td rowspan="3" class="celda_normal_table">Contributors</td>
+                              <td class="celda_normal_table">Rural</td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                            </tr>
+                            <tr>
+                              <td class="celda_normal_table">Urban</td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              
+                            </tr>
+                            <tr>
+                              <td class="celda_normal_table">Total</td>
+                              <th class="celda_normal_table">1000</th>
+                              <th class="celda_normal_table">2000</th>
+                              <th class="celda_normal_table">3000</th>
+                            </tr>
+                            <td rowspan="3" class="celda_normal_table">(Ask this, If scheme is Mix or Contributory)</td>
+                            <td class="celda_normal_table">Rural</td>
+                            <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                            <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                            <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                          </tr>
+                          <tr>
+                            <td class="celda_normal_table">Urban</td>
+                            <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                            <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                            <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                          </tr>
+                          <tr>
+                            <td class="celda_normal_table">Total</td>
+                            <th class="celda_normal_table">1000</th>
+                            <th class="celda_normal_table">2000</th>
+                            <th class="celda_normal_table">3000</th>
+                          </tr>
+
+
+                           <tr>
+                              <th colspan="5">Is agency providing benefit  support for persons with disability</th>
+                              <td><input type="radio" name="optradio" checked>Yes</td>
+                              <td><input type="radio" name="optradio" checked>No</td>
+                            </tr>
+
+                            <tr>
+                              <td rowspan="6" class="celda_normal_table">2.1</td>
+                              <td rowspan="6" class="celda_normal_table">Number of persons receiving disability benefits  (Ask this, if scheme is non-contributory)
+                              </td>
+                              <td rowspan="3" class="celda_normal_table">Beneficiaries</td>
+                              <td class="celda_normal_table">Rural</td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                            </tr>
+                            <tr>
+                              <td class="celda_normal_table">Urban</td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              
+                            </tr>
+                            <tr>
+                              <td class="celda_normal_table">Total</td>
+                              <th class="celda_normal_table">1000</th>
+                              <th class="celda_normal_table">2000</th>
+                              <th class="celda_normal_table">3000</th>
+                            </tr>
+                            <td rowspan="3" class="celda_normal_table">Incentive (PKR)</td>
+                            <td class="celda_normal_table">Rural</td>
+                            <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                            <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                            <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                          </tr>
+                          <tr>
+                            <td class="celda_normal_table">Urban</td>
+                            <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                            <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                            <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                          </tr>
+                          <tr>
+                            <td class="celda_normal_table">Total</td>
+                            <th class="celda_normal_table">1000</th>
+                            <th class="celda_normal_table">2000</th>
+                            <th class="celda_normal_table">3000</th>
+                          </tr>
+
+                          <tr>
+                              <th colspan="5">Is agency providing unemployment support</th>
+                              <td><input type="radio" name="optradio" checked>Yes</td>
+                              <td><input type="radio" name="optradio" checked>No</td>
+                            </tr>
+
+
+                            <div class="tables_of_expenditures1">
+                         <table id="pruebatabla" class="table table-bordered table-condensed  fht-table" style="width: 100%;">
+              
+
+
+                            <tr>
+                              <td colspan="4"></td>
+                              <td colspan="3">Male</td>
+                              <td rowspan="2">Total Male</td>
+                              <td colspan="3">Female</td>
+                              <td rowspan="2">Total Female</td>
+                              <td rowspan="2">Total</td>
+                            </tr>
+
+                            <tr>
+                              <td colspan="4">Age Group</td>
+                              <td colspan="">15-30</td>
+                              <td colspan="">31-45</td>
+                              <td colspan="">46-60</td>
+                              <td colspan="">15-30</td>
+                              <td colspan="">31-45</td>
+                              <td colspan="">46-60</td>
+                            </tr>
+
+                            <tr>
+                              <td rowspan="6">3.1</td>
+                              <td rowspan="6">Number of persons receiving unemployment support</td>
+                              <td rowspan="3">Beneficiaries</td>
+                              <td colspan="">Rurul</td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <th class="celda_normal_table">2000</th>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <th class="celda_normal_table">2000</th>
+                              <th class="celda_normal_table">2000</th>
+                            </tr>
+                             <tr>
+                              <td colspan="">Urban</td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <th class="celda_normal_table">2000</th>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <th class="celda_normal_table">2000</th>
+                              <th class="celda_normal_table">2000</th>
+                            </tr>
+                            <tr>
+                              <td colspan="">Total</td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <th class="celda_normal_table">2000</th>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <th class="celda_normal_table">2000</th>
+                              <th class="celda_normal_table">2000</th>
+                            </tr>
+
+                            <tr>
+                              <td rowspan="3">Incentive (PKR)</td>
+                              <td colspan="">Rurul</td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <th class="celda_normal_table">2000</th>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <th class="celda_normal_table">2000</th>
+                              <th class="celda_normal_table">2000</th>
+                            </tr>
+                             <tr>
+                              <td colspan="">Urban</td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <th class="celda_normal_table">2000</th>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <th class="celda_normal_table">2000</th>
+                              <th class="celda_normal_table">2000</th>
+                            </tr>
+                            <tr>
+                              <td colspan="">Total</td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <th class="celda_normal_table">2000</th>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <th class="celda_normal_table">2000</th>
+                              <th class="celda_normal_table">2000</th>
+                            </tr>
+
+
+
+                            <tr>
+                              <th colspan="11">Is agency providing maternity benefits</th>
+                              <td><input type="radio" name="optradio" checked>Yes</td>
+                              <td><input type="radio" name="optradio" checked>No</td>
+                            </tr>
+
+
+                            <div class="tables_of_expenditures1">
+                         <table id="pruebatabla" class="table table-bordered table-condensed  fht-table" style="width: 100%;">
+              
+
+
+                            <tr>
+                              <td colspan="4"></td>
+                              <td colspan="3">Male</td>
+                              <td rowspan="2">Total Male</td>
+                              <td colspan="3">Female</td>
+                              <td rowspan="2">Total Female</td>
+                              <td rowspan="2">Total</td>
+                            </tr>
+
+                            <tr>
+                              <td colspan="4">Age Group</td>
+                              <td colspan="">15-30</td>
+                              <td colspan="">31-45</td>
+                              <td colspan="">46-60</td>
+                              <td colspan="">15-30</td>
+                              <td colspan="">31-45</td>
+                              <td colspan="">46-60</td>
+                            </tr>
+
+                            <tr>
+                              <td rowspan="6">4.1</td>
+                              <td rowspan="6">Number of women receiving  maternity cash benefits </td>
+                              <td rowspan="3">Beneficiaries</td>
+                              <td colspan="">Rurul</td>
+                              <th class="celda_normal_table" style="background-color: black; color: white;">N/A</th>
+                              <th class="celda_normal_table" style="background-color: black; color: white;">N/A</th>
+                              <th class="celda_normal_table" style="background-color: black; color: white;">N/A</th>
+                              <th class="celda_normal_table" style="background-color: black; color: white;">N/A</th>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <th class="celda_normal_table">2000</th>
+                              <th class="celda_normal_table">2000</th>
+                            </tr>
+                             <tr>
+                              <td colspan="">Urban</td>
+                              <th class="celda_normal_table" style="background-color: black; color: white;">N/A</th>
+                              <th class="celda_normal_table" style="background-color: black; color: white;">N/A</th>
+                              <th class="celda_normal_table" style="background-color: black; color: white;">N/A</th>
+                              <th class="celda_normal_table" style="background-color: black; color: white;">N/A</th>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <th class="celda_normal_table">2000</th>
+                              <th class="celda_normal_table">2000</th>
+                            </tr>
+                            <tr>
+                              <td colspan="">Total</td>
+                              <th class="celda_normal_table" style="background-color: black; color: white;">N/A</th>
+                              <th class="celda_normal_table" style="background-color: black; color: white;">N/A</th>
+                              <th class="celda_normal_table" style="background-color: black; color: white;">N/A</th>
+                              <th class="celda_normal_table" style="background-color: black; color: white;">N/A</th>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <th class="celda_normal_table">2000</th>
+                              <th class="celda_normal_table">2000</th>
+                            </tr>
+
+                            <tr>
+                              <td rowspan="3">Incentive (PKR)</td>
+                              <td colspan="">Rurul</td>
+                              <th class="celda_normal_table" style="background-color: black; color: white;">N/A</th>
+                              <th class="celda_normal_table" style="background-color: black; color: white;">N/A</th>
+                              <th class="celda_normal_table" style="background-color: black; color: white;">N/A</th>
+                              <th class="celda_normal_table" style="background-color: black; color: white;">N/A</th>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <th class="celda_normal_table">2000</th>
+                              <th class="celda_normal_table">2000</th>
+                            </tr>
+                             <tr>
+                              <td colspan="">Urban</td>
+                              <th class="celda_normal_table" style="background-color: black; color: white;">N/A</th>
+                              <th class="celda_normal_table" style="background-color: black; color: white;">N/A</th>
+                              <th class="celda_normal_table" style="background-color: black; color: white;">N/A</th>
+                              <th class="celda_normal_table" style="background-color: black; color: white;">N/A</th>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <th class="celda_normal_table">2000</th>
+                              <th class="celda_normal_table">2000</th>
+                            </tr>
+                            <tr>
+                              <td colspan="">Total</td>
+                              <th class="celda_normal_table" style="background-color: black; color: white;">N/A</th>
+                              <th class="celda_normal_table" style="background-color: black; color: white;">N/A</th>
+                              <th class="celda_normal_table" style="background-color: black; color: white;">N/A</th>
+                              <th class="celda_normal_table" style="background-color: black; color: white;">N/A</th>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <th class="celda_normal_table">2000</th>
+                              <th class="celda_normal_table">2000</th>
+                            </tr>
+
+                            <tr>
+                              <th colspan="11">Is agency providing work injury support</th>
+                              <td><input type="radio" name="optradio" checked>Yes</td>
+                              <td><input type="radio" name="optradio" checked>No</td>
+                            </tr>
+
+
+                            <div class="tables_of_expenditures1">
+                         <table id="pruebatabla" class="table table-bordered table-condensed  fht-table" style="width: 100%;">
+              
+
+
+                            <tr>
+                              <td colspan="4"></td>
+                              <td colspan="3">Male</td>
+                              <td rowspan="2">Total Male</td>
+                              <td colspan="3">Female</td>
+                              <td rowspan="2">Total Female</td>
+                              <td rowspan="2">Total</td>
+                            </tr>
+
+                            <tr>
+                              <td colspan="4">Age Group</td>
+                              <td colspan="">15-30</td>
+                              <td colspan="">31-45</td>
+                              <td colspan="">46-60</td>
+                              <td colspan="">15-30</td>
+                              <td colspan="">31-45</td>
+                              <td colspan="">46-60</td>
+                            </tr>
+
+                            <tr>
+                              <td rowspan="6">5.1</td>
+                              <td rowspan="6">Number of person receive cash benefit for employment injury</td>
+                              <td rowspan="3">Beneficiaries</td>
+                              <td colspan="">Rurul</td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <th class="celda_normal_table">2000</th>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <th class="celda_normal_table">2000</th>
+                              <th class="celda_normal_table">2000</th>
+                            </tr>
+                             <tr>
+                              <td colspan="">Urban</td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <th class="celda_normal_table">2000</th>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <th class="celda_normal_table">2000</th>
+                              <th class="celda_normal_table">2000</th>
+                            </tr>
+                            <tr>
+                              <td colspan="">Total</td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <th class="celda_normal_table">2000</th>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <th class="celda_normal_table">2000</th>
+                              <th class="celda_normal_table">2000</th>
+                            </tr>
+
+                            <tr>
+                              <td rowspan="3">Incentive (PKR)</td>
+                              <td colspan="">Rurul</td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <th class="celda_normal_table">2000</th>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <th class="celda_normal_table">2000</th>
+                              <th class="celda_normal_table">2000</th>
+                            </tr>
+                             <tr>
+                              <td colspan="">Urban</td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <th class="celda_normal_table">2000</th>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <th class="celda_normal_table">2000</th>
+                              <th class="celda_normal_table">2000</th>
+                            </tr>
+                            <tr>
+                              <td colspan="">Total</td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <th class="celda_normal_table">2000</th>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <th class="celda_normal_table">2000</th>
+                              <th class="celda_normal_table">2000</th>
+                            </tr>
+
+                            <tr>
+                              <td rowspan="3">5.2</td>
+                              <td rowspan="3">Number of persons covered for employment injury </td>
+                              <td rowspan="3">Person Covered </td>
+                              <td colspan="">Rurul</td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <th class="celda_normal_table">2000</th>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <th class="celda_normal_table">2000</th>
+                              <th class="celda_normal_table">2000</th>
+                            </tr>
+                             <tr>
+                              <td colspan="">Urban</td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <th class="celda_normal_table">2000</th>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <th class="celda_normal_table">2000</th>
+                              <th class="celda_normal_table">2000</th>
+                            </tr>
+                            <tr>
+                              <td colspan="">Total</td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <th class="celda_normal_table">2000</th>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <th class="celda_normal_table">2000</th>
+                              <th class="celda_normal_table">2000</th>
+                            </tr>
+                            <tr>
+                              <td rowspan="3">5.3</td>
+                              <td rowspan="3">Number of person contributing to cover employment injury</td>
+                              <td rowspan="3">Contributors </td>
+                              <td colspan="">Rurul</td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <th class="celda_normal_table">2000</th>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <th class="celda_normal_table">2000</th>
+                              <th class="celda_normal_table">2000</th>
+                            </tr>
+                             <tr>
+                              <td colspan="">Urban</td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <th class="celda_normal_table">2000</th>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <th class="celda_normal_table">2000</th>
+                              <th class="celda_normal_table">2000</th>
+                            </tr>
+                            <tr>
+                              <td colspan="">Total</td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <th class="celda_normal_table">2000</th>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <th class="celda_normal_table">2000</th>
+                              <th class="celda_normal_table">2000</th>
+                            </tr>
+
+
+
+                            <tr>
+                              <th colspan="11">Is agency providing children support?</th>
+                              <td><input type="radio" name="optradio" checked>Yes</td>
+                              <td><input type="radio" name="optradio" checked>No</td>
+                            </tr>
+
+
+                            <div class="tables_of_expenditures1">
+                         <table id="pruebatabla" class="table table-bordered table-condensed  fht-table" style="width: 100%;">
+              
+
+
+                            <tr>
+                              <td colspan="4"></td>
+                              <td colspan="3">Male</td>
+                              <td rowspan="2">Total Male</td>
+                              <td colspan="3">Female</td>
+                              <td rowspan="2">Total Female</td>
+                              <td rowspan="2">Total</td>
+                            </tr>
+
+                            <tr>
+                              <td colspan="4">Age Group</td>
+                              <td colspan="">1-5</td>
+                              <td colspan="">6-12</td>
+                              <td colspan="">13-18</td>
+                              <td colspan="">1-5</td>
+                              <td colspan="">6-12</td>
+                              <td colspan="">13-18</td>
+                            </tr>
+
+                            <tr>
+                              <td rowspan="6">6.1</td>
+                              <td rowspan="6">Number of households receiving cash support for children covered under social protection benefits</td>
+                              <td rowspan="3">Beneficiaries</td>
+                              <td colspan="">Rurul</td>
+                              <th class="celda_normal_table" style="background-color: black; color: white;">N/A</th>
+                              <th class="celda_normal_table" style="background-color: black; color: white;">N/A</th>
+                              <th class="celda_normal_table" style="background-color: black; color: white;">N/A</th>
+                              <th class="celda_normal_table" style="background-color: black; color: white;">N/A</th>
+                              <th class="celda_normal_table" style="background-color: black; color: white;">N/A</th>
+                              <th class="celda_normal_table" style="background-color: black; color: white;">N/A</th>
+                              <th class="celda_normal_table" style="background-color: black; color: white;">N/A</th>
+                              <th class="celda_normal_table" style="background-color: black; color: white;">N/A</th>
+                              <th class="celda_normal_table">2000</th>
+                            </tr>
+                             <tr>
+                              <td colspan="">Urban</td>
+                              <th class="celda_normal_table" style="background-color: black; color: white;">N/A</th>
+                              <th class="celda_normal_table" style="background-color: black; color: white;">N/A</th>
+                              <th class="celda_normal_table" style="background-color: black; color: white;">N/A</th>
+                              <th class="celda_normal_table" style="background-color: black; color: white;">N/A</th>
+                              <th class="celda_normal_table" style="background-color: black; color: white;">N/A</th>
+                              <th class="celda_normal_table" style="background-color: black; color: white;">N/A</th>
+                              <th class="celda_normal_table" style="background-color: black; color: white;">N/A</th>
+                              <th class="celda_normal_table" style="background-color: black; color: white;">N/A</th>
+                              <th class="celda_normal_table">2000</th>
+                            </tr>
+                            <tr>
+                              <td colspan="">Total</td>
+                              <th class="celda_normal_table" style="background-color: black; color: white;">N/A</th>
+                              <th class="celda_normal_table" style="background-color: black; color: white;">N/A</th>
+                              <th class="celda_normal_table" style="background-color: black; color: white;">N/A</th>
+                              <th class="celda_normal_table" style="background-color: black; color: white;">N/A</th>
+                              <th class="celda_normal_table" style="background-color: black; color: white;">N/A</th>
+                              <th class="celda_normal_table" style="background-color: black; color: white;">N/A</th>
+                              <th class="celda_normal_table" style="background-color: black; color: white;">N/A</th>
+                              <th class="celda_normal_table" style="background-color: black; color: white;">N/A</th>
+                              <th class="celda_normal_table">2000</th>
+                            </tr>
+
+                            <tr>
+                              <td rowspan="3">Incentive (PKR)</td>
+                              <td colspan="">Rurul</td>
+                              <th class="celda_normal_table" style="background-color: black; color: white;">N/A</th>
+                              <th class="celda_normal_table" style="background-color: black; color: white;">N/A</th>
+                              <th class="celda_normal_table" style="background-color: black; color: white;">N/A</th>
+                              <th class="celda_normal_table" style="background-color: black; color: white;">N/A</th>
+                              <th class="celda_normal_table" style="background-color: black; color: white;">N/A</th>
+                              <th class="celda_normal_table" style="background-color: black; color: white;">N/A</th>
+                              <th class="celda_normal_table" style="background-color: black; color: white;">N/A</th>
+                              <th class="celda_normal_table" style="background-color: black; color: white;">N/A</th>
+                              <th class="celda_normal_table">2000</th>
+                            </tr>
+                             <tr>
+                              <td colspan="">Urban</td>
+                              <th class="celda_normal_table" style="background-color: black; color: white;">N/A</th>
+                              <th class="celda_normal_table" style="background-color: black; color: white;">N/A</th>
+                              <th class="celda_normal_table" style="background-color: black; color: white;">N/A</th>
+                              <th class="celda_normal_table" style="background-color: black; color: white;">N/A</th>
+                              <th class="celda_normal_table" style="background-color: black; color: white;">N/A</th>
+                              <th class="celda_normal_table" style="background-color: black; color: white;">N/A</th>
+                              <th class="celda_normal_table" style="background-color: black; color: white;">N/A</th>
+                              <th class="celda_normal_table" style="background-color: black; color: white;">N/A</th>
+                              <th class="celda_normal_table">2000</th>
+                            </tr>
+                            <tr>
+                              <td colspan="">Total</td>
+                              <th class="celda_normal_table" style="background-color: black; color: white;">N/A</th>
+                              <th class="celda_normal_table" style="background-color: black; color: white;">N/A</th>
+                              <th class="celda_normal_table" style="background-color: black; color: white;">N/A</th>
+                              <th class="celda_normal_table" style="background-color: black; color: white;">N/A</th>
+                              <th class="celda_normal_table" style="background-color: black; color: white;">N/A</th>
+                              <th class="celda_normal_table" style="background-color: black; color: white;">N/A</th>
+                              <th class="celda_normal_table" style="background-color: black; color: white;">N/A</th>
+                              <th class="celda_normal_table" style="background-color: black; color: white;">N/A</th>
+                              <th class="celda_normal_table">2000</th>
+                            </tr>
+                            <tr>
+                              <td rowspan="6">6.2</td>
+                              <td rowspan="6">Number of children covered by cash/In-kind benefits</td>
+                              <td rowspan="3">Beneficiaries </td>
+                              <td colspan="">Rurul</td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <th class="celda_normal_table">2000</th>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <th class="celda_normal_table">2000</th>
+                              <th class="celda_normal_table">2000</th>
+                            </tr>
+                             <tr>
+                              <td colspan="">Urban</td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <th class="celda_normal_table">2000</th>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <th class="celda_normal_table">2000</th>
+                              <th class="celda_normal_table">2000</th>
+                            </tr>
+                            <tr>
+                              <td colspan="">Total</td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <th class="celda_normal_table">2000</th>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <th class="celda_normal_table">2000</th>
+                              <th class="celda_normal_table">2000</th>
+                            </tr>
+                            <tr>
+                              <td rowspan="3">Incentive (PKR) </td>
+                              <td colspan="">Rurul</td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <th class="celda_normal_table">2000</th>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <th class="celda_normal_table">2000</th>
+                              <th class="celda_normal_table">2000</th>
+                            </tr>
+                             <tr>
+                              <td colspan="">Urban</td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <th class="celda_normal_table">2000</th>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <th class="celda_normal_table">2000</th>
+                              <th class="celda_normal_table">2000</th>
+                            </tr>
+                            <tr>
+                              <td colspan="">Total</td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <th class="celda_normal_table">2000</th>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <th class="celda_normal_table">2000</th>
+                              <th class="celda_normal_table">2000</th>
+                            </tr>
+
+                             <tr>
+                              <th colspan="11">Is agency providing support to vulnerable persons? Vulnerable referred here are individuals or groups disempowered in society due to age, poor health, minority status etc.(Ask this, if scheme is non-contributory)</th>
+                              <td><input type="radio" name="optradio" checked>Yes</td>
+                              <td><input type="radio" name="optradio" checked>No</td>
+                            </tr>
+
+
+                            <div class="tables_of_expenditures1">
+                         <table id="pruebatabla" class="table table-bordered table-condensed  fht-table" style="width: 100%;">
+
+
+                          <tr>
+                            <td colspan="">Women</td>
+                            <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                            <td colspan="">Children </td>
+                            <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                            <td colspan="">Adolescents</td>
+                            <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                            <td colspan="">Older persons</td>
+                            <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                          <tr>
+                            <tr>
+                            <td colspan="">Persons with disabilities</td>
+                            <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                            <td colspan="">Minorities</td>
+                            <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                            <td colspan="">Migrants</td>
+                            <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                            <td colspan="">Indigenous people</td>
+                            <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                          <tr>
+                            <tr>
+                            <td colspan="">Unemployed</td>
+                            <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                            <td colspan="">Domestic/home workers</td>
+                            <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                            <td colspan="">Refugees </td>
+                            <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                            <td colspan="">Internally displaced persons</td>
+                            <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                          <tr>
+                            <tr>
+                            <td colspan="">Non-nationals</td>
+                            <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                            <td colspan="">Prisoners and detainees</td>
+                            <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                            <td colspan="">Returnees</td>
+                            <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                            <td colspan="">sick or injured workers</td>
+                            <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                          <tr>
+                            <tr>
+                            <td colspan="">People living with HIV/AIDs</td>
+                            <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                            <td colspan="">LGBTQ</td>
+                            <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                            <td colspan="">Persons living in poverty’</td>
+                            <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                            <td colspan="">Other</td>
+                            <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                          <tr>
+
+
+                            <div class="tables_of_expenditures1">
+                         <table id="pruebatabla" class="table table-bordered table-condensed  fht-table" style="width: 100%;">
+              
+
+
+                            <tr>
+                              <td colspan="4"></td>
+                              <td colspan="3">Male</td>
+                              <td rowspan="2">Total Male</td>
+                              <td colspan="3">Female</td>
+                              <td rowspan="2">Total Female</td>
+                              <td rowspan="2">Total</td>
+                            </tr>
+
+                            <tr>
+                              <td colspan="4">Age Group</td>
+                              <td colspan="">0-30</td>
+                              <td colspan="">31-60</td>
+                              <td colspan="">60+</td>
+                              <td colspan="">0-30</td>
+                              <td colspan="">31-60</td>
+                              <td colspan="">60+</td>
+                            </tr>
+
+                            <tr>
+                              <td rowspan="6">7.1</td>
+                              <td rowspan="6">Number of vulnerable persons covered by the scheme </td>
+                              <td rowspan="3">Beneficiaries</td>
+                              <td colspan="">Rurul</td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <th class="celda_normal_table">2000</th>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <th class="celda_normal_table">2000</th>
+                              <th class="celda_normal_table">2000</th>
+                            </tr>
+                             <tr>
+                              <td colspan="">Urban</td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <th class="celda_normal_table">2000</th>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <th class="celda_normal_table">2000</th>
+                              <th class="celda_normal_table">2000</th>
+                            </tr>
+                            <tr>
+                              <td colspan="">Total</td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <th class="celda_normal_table">2000</th>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <th class="celda_normal_table">2000</th>
+                              <th class="celda_normal_table">2000</th>
+                            </tr>
+
+                            <tr>
+                              <td rowspan="3">Incentive (PKR)</td>
+                              <td colspan="">Rurul</td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <th class="celda_normal_table">2000</th>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <th class="celda_normal_table">2000</th>
+                              <th class="celda_normal_table">2000</th>
+                            </tr>
+                             <tr>
+                              <td colspan="">Urban</td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <th class="celda_normal_table">2000</th>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <th class="celda_normal_table">2000</th>
+                              <th class="celda_normal_table">2000</th>
+                            </tr>
+                            <tr>
+                              <td colspan="">Total</td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <th class="celda_normal_table">2000</th>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <th class="celda_normal_table">2000</th>
+                              <th class="celda_normal_table">2000</th>
+                            </tr>
+
+
+                            <tr>
+                              <th colspan="11">Is agency providing support to persons living below poverty line (>$1.25 or PKR 210 / day)</th>
+                              <td><input type="radio" name="optradio" checked>Yes</td>
+                              <td><input type="radio" name="optradio" checked>No</td>
+                            </tr>
+
+                            <div class="tables_of_expenditures1">
+                         <table id="pruebatabla" class="table table-bordered table-condensed  fht-table" style="width: 100%;">
+              
+
+
+                            <tr>
+                              <td colspan="4"></td>
+                              <td rowspan="2"># of households</td>
+                              <td colspan="3">No. of males covered in households</td>
+                              <td rowspan="2">Total Male</td>
+                              <td colspan="3">No. of females covered in households</td>
+                              <td rowspan="2">Total Female</td>
+                              <td rowspan="2">Total</td>
+                            </tr>
+
+                            <tr>
+                              <td colspan="4">Age Group</td>
+                              <td colspan="">0-30</td>
+                              <td colspan="">31-60</td>
+                              <td colspan="">60+</td>
+                              <td colspan="">0-30</td>
+                              <td colspan="">31-60</td>
+                              <td colspan="">60+</td>
+                            </tr>
+
+                            <tr>
+                              <td rowspan="6">8.1</td>
+                              <td rowspan="6">Number of persons / households covered by social assistance (cash benefits) </td>
+                              <td rowspan="3">Beneficiaries</td>
+                              <td colspan="">Rurul</td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <th class="celda_normal_table">2000</th>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <th class="celda_normal_table">2000</th>
+                              <th class="celda_normal_table">2000</th>
+                            </tr>
+                             <tr>
+                              <td colspan="">Urban</td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <th class="celda_normal_table">2000</th>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <th class="celda_normal_table">2000</th>
+                              <th class="celda_normal_table">2000</th>
+                            </tr>
+                            <tr>
+                              <td colspan="">Total</td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <th class="celda_normal_table">2000</th>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <th class="celda_normal_table">2000</th>
+                              <th class="celda_normal_table">2000</th>
+                            </tr>
+
+                            <tr>
+                              <td rowspan="3">Incentive (PKR)</td>
+                              <td colspan="">Rurul</td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <th class="celda_normal_table">2000</th>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <th class="celda_normal_table">2000</th>
+                              <th class="celda_normal_table">2000</th>
+                            </tr>
+                             <tr>
+                              <td colspan="">Urban</td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <th class="celda_normal_table">2000</th>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <th class="celda_normal_table">2000</th>
+                              <th class="celda_normal_table">2000</th>
+                            </tr>
+                            <tr>
+                              <td colspan="">Total</td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <th class="celda_normal_table">2000</th>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <th class="celda_normal_table">2000</th>
+                              <th class="celda_normal_table">2000</th>
+                            </tr>
+
+                            <tr>
+                              <th colspan="11">Is agency providing support to unemployed persons involved in employment guarantee programmes</th>
+                              <td><input type="radio" name="optradio" checked>Yes</td>
+                              <td><input type="radio" name="optradio" checked>No</td>
+                            </tr>
+
+
+                            <div class="tables_of_expenditures1">
+                         <table id="pruebatabla" class="table table-bordered table-condensed  fht-table" style="width: 100%;">
+              
+
+
+                            <tr>
+                              <td colspan="4"></td>
+                              <td colspan="3">Male</td>
+                              <td rowspan="2">Total Male</td>
+                              <td colspan="3">Female</td>
+                              <td rowspan="2">Total Female</td>
+                              <td rowspan="2">Total</td>
+                            </tr>
+
+                            <tr>
+                              <td colspan="4">Age Group</td>
+                              <td colspan="">1-5</td>
+                              <td colspan="">6-12</td>
+                              <td colspan="">13-18</td>
+                              <td colspan="">1-5</td>
+                              <td colspan="">6-12</td>
+                              <td colspan="">13-18</td>
+                            </tr>
+
+                            <tr>
+                              <td rowspan="6">9.1</td>
+                              <td rowspan="6">Number of persons registered in employment guarantee programmes</td>
+                              <td rowspan="3">Beneficiaries</td>
+                              <td colspan="">Rurul</td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <th class="celda_normal_table">2000</th>
+                            </tr>
+                             <tr>
+                              <td colspan="">Urban</td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <th class="celda_normal_table">2000</th>
+                            </tr>
+                            <tr>
+                              <td colspan="">Total</td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <th class="celda_normal_table">2000</th>
+                            </tr>
+
+                            <tr>
+                              <td rowspan="3">Incentive (PKR)</td>
+                              <td colspan="">Rurul</td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <th class="celda_normal_table">2000</th>
+                            </tr>
+                             <tr>
+                              <td colspan="">Urban</td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <th class="celda_normal_table">2000</th>
+                            </tr>
+                            <tr>
+                              <td colspan="">Total</td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <th class="celda_normal_table">2000</th>
+                            </tr>
+
+                            <tr>
+                              <th colspan="11">Is agency administrating health insurance schemes</th>
+                              <td><input type="radio" name="optradio" checked>Yes</td>
+                              <td><input type="radio" name="optradio" checked>No</td>
+                            </tr>
+
+
+                            <div class="tables_of_expenditures1">
+                         <table id="pruebatabla" class="table table-bordered table-condensed  fht-table" style="width: 100%;">
+              
+
+
+                            <tr>
+                              <td colspan="4"></td>
+                              <td colspan="3">Male</td>
+                              <td rowspan="2">Total Male</td>
+                              <td colspan="3">Female</td>
+                              <td rowspan="2">Total Female</td>
+                              <td rowspan="2">Total</td>
+                            </tr>
+
+                            <tr>
+                              <td colspan="4">Age Group</td>
+                              <td colspan="">1-5</td>
+                              <td colspan="">6-12</td>
+                              <td colspan="">13-18</td>
+                              <td colspan="">1-5</td>
+                              <td colspan="">6-12</td>
+                              <td colspan="">13-18</td>
+                            </tr>
+
+                            <tr>
+                              <td rowspan="6">10.1</td>
+                              <td rowspan="6">Number of persons contributing to health insurance (Ask this, If scheme is contributory or Mix)</td>
+                              <td rowspan="3">Beneficiaries</td>
+                              <td colspan="">Rurul</td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <th class="celda_normal_table">2000</th>
+                            </tr>
+                             <tr>
+                              <td colspan="">Urban</td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <th class="celda_normal_table">2000</th>
+                            </tr>
+                            <tr>
+                              <td colspan="">Total</td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <th class="celda_normal_table">2000</th>
+                            </tr>
+
+                            <tr>
+                              <td rowspan="3">Incentive (PKR)</td>
+                              <td colspan="">Rurul</td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <th class="celda_normal_table">2000</th>
+                            </tr>
+                             <tr>
+                              <td colspan="">Urban</td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <th class="celda_normal_table">2000</th>
+                            </tr>
+                            <tr>
+                              <td colspan="">Total</td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <th class="celda_normal_table">2000</th>
+                            </tr>
+                            <tr>
+                              <td rowspan="6">10.2</td>
+                              <td rowspan="6">Number of persons  affiliated to health insurance (including dependents)</td>
+                              <td rowspan="3">Beneficiaries</td>
+                              <td colspan="">Rurul</td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <th class="celda_normal_table">2000</th>
+                            </tr>
+                             <tr>
+                              <td colspan="">Urban</td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <th class="celda_normal_table">2000</th>
+                            </tr>
+                            <tr>
+                              <td colspan="">Total</td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <th class="celda_normal_table">2000</th>
+                            </tr>
+
+                            <tr>
+                              <td rowspan="3">Incentive (PKR)</td>
+                              <td colspan="">Rurul</td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <th class="celda_normal_table">2000</th>
+                            </tr>
+                             <tr>
+                              <td colspan="">Urban</td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <th class="celda_normal_table">2000</th>
+                            </tr>
+                            <tr>
+                              <td colspan="">Total</td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <th class="celda_normal_table">2000</th>
+                            </tr>
+
+
+
+                             <tr>
+                              <th colspan="11">Is agency providing subsides for  specific group of population (Ask this, if scheme is non-contributory)
+                              </th>
+                              <td><input type="radio" name="optradio" checked>Yes</td>
+                              <td><input type="radio" name="optradio" checked>No</td>
+                            </tr>
+
+
+                            <div class="tables_of_expenditures1">
+                         <table id="pruebatabla" class="table table-bordered table-condensed  fht-table" style="width: 100%;">
+
+
+                          <tr>
+                            <td colspan="">Food</td>
+                            <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                            <td colspan="">Electricity </td>
+                            <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                            <td colspan="">Fuel</td>
+                            <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                            <td colspan="">Other</td>
+                            <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                          <tr>
+
+                            <div class="tables_of_expenditures1">
+                         <table id="pruebatabla" class="table table-bordered table-condensed  fht-table" style="width: 100%;">
+              
+
+
+                            <tr>
+                              <td colspan="4"></td>
+                              <td colspan="3">Male</td>
+                              <td rowspan="2">Total Male</td>
+                              <td colspan="3">Female</td>
+                              <td rowspan="2">Total Female</td>
+                              <td rowspan="2">Total</td>
+                            </tr>
+
+                            <tr>
+                              <td colspan="4">Age Group</td>
+                              <td colspan="">1-5</td>
+                              <td colspan="">6-12</td>
+                              <td colspan="">13-18</td>
+                              <td colspan="">1-5</td>
+                              <td colspan="">6-12</td>
+                              <td colspan="">13-18</td>
+                            </tr>
+
+                            <tr>
+                              <td rowspan="6">11.1</td>
+                              <td rowspan="6">Number of persons contributing to health insurance (Ask this, If scheme is contributory or Mix)</td>
+                              <td rowspan="3">Beneficiaries</td>
+                              <td colspan="">Rurul</td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <th class="celda_normal_table">2000</th>
+                            </tr>
+                             <tr>
+                              <td colspan="">Urban</td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <th class="celda_normal_table">2000</th>
+                            </tr>
+                            <tr>
+                              <td colspan="">Total</td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <th class="celda_normal_table">2000</th>
+                            </tr>
+
+                            <tr>
+                              <td rowspan="3">Incentive (PKR)</td>
+                              <td colspan="">Rurul</td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <th class="celda_normal_table">2000</th>
+                            </tr>
+                             <tr>
+                              <td colspan="">Urban</td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <th class="celda_normal_table">2000</th>
+                            </tr>
+                            <tr>
+                              <td colspan="">Total</td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <th class="celda_normal_table">2000</th>
+                            </tr>
+                            <tr>
+                              <td rowspan="6">11.2</td>
+                              <td rowspan="6">Number of persons benefiting from subsidy scheme</td>
+                              <td rowspan="3">Beneficiaries</td>
+                              <td colspan="">Rurul</td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <th class="celda_normal_table">2000</th>
+                            </tr>
+                             <tr>
+                              <td colspan="">Urban</td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <th class="celda_normal_table">2000</th>
+                            </tr>
+                            <tr>
+                              <td colspan="">Total</td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <th class="celda_normal_table">2000</th>
+                            </tr>
+
+                            <tr>
+                              <td rowspan="3">Incentive (PKR)</td>
+                              <td colspan="">Rurul</td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <th class="celda_normal_table">2000</th>
+                            </tr>
+                             <tr>
+                              <td colspan="">Urban</td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <th class="celda_normal_table">2000</th>
+                            </tr>
+                            <tr>
+                              <td colspan="">Total</td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <td class="celda_normal_table"><input class="form-control" id="" type="text" ></td>
+                              <th class="celda_normal_table">2000</th>
+                            </tr>
+                            
+              
+                                              
+                            
+                            
+                            
+                            
+                            
+                              
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+               
+            </div>
+           <!-- Page Content End Here -->
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="assets/js/jquery-3.4.1.min.js"></script>
+    <script src="assets/bootstrap/popper.min.js"></script>
+    <script src="assets/bootstrap/bootstrap.min.js"></script>
+    <!-- wysihtml -->
+    <script src="http://voog.github.io/wysihtml/bower_components/wysihtml/dist/minified/wysihtml.min.js"></script>
+    <script src="http://voog.github.io/wysihtml/bower_components/wysihtml/dist/minified/wysihtml.all-commands.min.js"></script> 
+    <script src="http://voog.github.io/wysihtml/bower_components/wysihtml/dist/minified/wysihtml.table_editing.min.js"></script> 
+    <script src="http://voog.github.io/wysihtml/bower_components/wysihtml/dist/minified/wysihtml.toolbar.min.js"></script>
+    <script src="http://voog.github.io/wysihtml/bower_components/wysihtml/parser_rules/advanced_and_extended.js"></script>
+    
+      <script type="text/javascript">
+       $(document).ready(function () {
+
+    $('#sidebarCollapse').on('click', function () {
+        $('#sidebar').toggleClass('active');
+        $('#content').toggleClass('active');
+    });
+           var editor = new wysihtml.Editor(document.getElementById('editor'), {
+    toolbar:document.getElementById('toolbar'),
+    parserRules:  wysihtmlParserRules
+  });
+
+});
+          
+          // Function For Tooltips
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+
+          
+        $(function() {
+            $(".li-tree").on("click", function(e) {
+                    $(".li-tree .sidebar-submenu").not(this).removeClass("show");
+                    $(this).toggleClass("show");
+                    e.stopPropagation()
+                });
+            $(document).on("click", function(e) {
+//                if ($(e.target).is("ul.responsive-side") === false) {
+//                    $(".li-tree.intro").removeClass("intro");
+////                    alert ('this is sidebar');
+//                  
+//                }
+//                else{
+//                     $('.li-tree.intro').addClass("");
+//                }
+            });
+        });
+</script>
+<script>
+    $('#body-row .collapse').collapse('hide'); 
+
+// Collapse/Expand icon
+$('#collapse-icon').addClass('fa-angle-double-left'); 
+
+// Collapse click
+$('[data-toggle=sidebar-colapse]').click(function() {
+    SidebarCollapse();
+});
+
+function SidebarCollapse () {
+    $('.menu-collapsed').toggleClass('d-none');
+    $('.sidebar-submenu').toggleClass('d-none');
+    $('.submenu-icon').toggleClass('d-none');
+    $('#sidebar-container').toggleClass('sidebar-expanded sidebar-collapsed');
+    
+    // Treating d-flex/d-none on separators with title
+    var SeparatorTitle = $('.sidebar-separator-title');
+    if ( SeparatorTitle.hasClass('d-flex') ) {
+        SeparatorTitle.removeClass('d-flex');
+    } else {
+        SeparatorTitle.addClass('d-flex');
+    }
+    
+    // Collapse/Expand icon
+    $('#collapse-icon').toggleClass('fa-angle-double-left fa-angle-double-right');
+}
+</script>
+ <script>
+
+     $(window).on('load', function(){
+      var win = $(this);
+      if (win.width() < 768) { 
+
+      $('#sidebar').addClass('active');
+           $('#content').addClass('active');
+
+      }
+    else
+    {
+        $('#sidebar').removeClass('active');
+        $('#content').removeClass('active');
+    }
+
+});
+          $(window).on('resize1', function(){
+     
+       if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+
+      $('#sidebar').addClass('active');
+           $('#content').addClass('active');
+
+      }
+    else
+    {
+        $('#sidebar').removeClass('active');
+        $('#content').removeClass('active');
+    }
+
+});
+     
+  if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+ // some code..
+      
+}
+</script>
+  </body>
+</html>

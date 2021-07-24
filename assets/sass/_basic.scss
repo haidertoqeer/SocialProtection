@@ -1,0 +1,79 @@
+/*
+    This File Include Basic Variable
+*/
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+
+.error_prefix{
+	background:red;
+	color:#fff;
+	padding: 0 5px 2px 5px;
+	border-radius: 2px;
+}
+
+.bg-1{
+    background: #92aa2e;
+}
+.bg-2{
+    background: #fbb931;
+}
+.bg-3{
+    background: #358DD2;
+}
+.bg-4{
+    background: #086DAD;
+}
+    .btn-custom{
+        background: rgb(23,92,115);
+        background: linear-gradient(259deg, rgba(23,92,115,1) 0%, rgba(18,117,149,1) 100%);
+        font-size: 15px;
+        font-weight: 300;
+        text-transform: uppercase;
+        padding: 5px 20px;
+        position: relative;
+        color: #fff;
+        border-radius: 2px !important;
+        span{
+            z-index: 1;
+            position: relative;
+            color: #f3f3f2;
+            transition: all 0.3s;
+        }
+        &:after{
+            content: '';
+            height: 104%;
+            width: 101%;
+            background: rgb(0,0,0);
+            background: linear-gradient(259deg, rgba(0,0,0,0.7259278711484594) 0%, rgba(0,0,0,0.6138830532212884) 100%);
+            position: absolute;
+            left: -1px;
+            top: -50px;
+            border-radius: 3px;
+            transition: all 0.2s;
+        }
+        &:hover{
+            &:after{
+                top: -1px;
+            }
+            span{
+                color: #fff;
+            }
+        }
+            
+    }
+.btn-custom-danger{
+    background: #bf0b0b !important;
+    margin-right: 20px;
+}
+.btn-custom-primary{
+    background: #008057;
+    margin-right: 20px;
+}
+h4.heading{
+    margin: -5px -15px 5px -15px;
+    background: #176078;
+    color: #fff;
+    padding: 10px;
+}
+.btn.focus, .btn:focus{
+    box-shadow: none;
+}
